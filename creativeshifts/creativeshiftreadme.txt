@@ -1,7 +1,15 @@
 This folder contains the results of the units of creative potential marked in the source text by two annotators and the creative shifts for these 185 units of creative potential marked by the 5 reviewers.
 
+Units of creative potential by annotators
+
+Source text indicates the ST
+unit of creative pontential represents the text selected by the annotators
+annotator A if the ucp was selected by annotator A
+annotar B if the ucp was selected by annotator B
+total annotators indicates whether 1 or 2 annotators marked this unit
 
 Creative Shifts
+
 String_Id corresponds to a sentence, if there is more than one creative shift per sentence, the ID is repeated.
 paragraph_id corresponds to the paragraph where the sentence is (the translators translated by paragraph).
 ucp Unit of creative potential corresponds to the unit marked by the annotators.
