@@ -1,0 +1,374 @@
+0:09.8 - 0:11.4	Interviewer: I you want to answer that, I	
+0:12.6 - 0:13.1	T4NL: No,	
+0:15.3 - 0:16.2	And	
+0:19.4 - 0:22.9	Interviewer: Okay, so the first question I wanted	
+0:22.9 - 0:24.2	To ask you	
+0:25.2 - 0:25.5	Interviewer: Was	
+0:33.9 - 0:35.6	T4NL: Just disconnecting my phone.	
+0:36.4 - 0:37.4	Interviewer: Recording	
+0:38.6 - 0:47.9	Interviewer: Okay, so the first question I wanted to ask you this. If you could give me your general views on translating this text.	
+0:50.8 - 0:57.1	T4NL: You mean as a regular translator or using the pre-translated text.	
+0:58.4 - 1:04.1	Interviewer: Overall as a translator, what did you think of translating this text.	
+1:04.3 - 1:11.0	T4NL: Well, first of all, I like the text it because it's it's it's a literary text and	
+1:12.2 - 1:18.8	T4NL: A bit challenging as you said before, and I like translating it and	
+1:20.0 - 1:31.2	T4NL: You know, for myself from the start. And then it was interesting, also to to to post edit the pre-translated machine version of it.	
+1:32.2 - 1:39.1	Interviewer: Okay, so what were the main difficulties or challenges of this text.	
+1:40.1 - 1:40.9	Interviewer: For you.	
+1:42.7 - 1:47.9	T4NL: Well in generally, generally speaking, of course, other words those typical things	
+1:49.1 - 1:55.5	T4NL: What we call "realia" in Dutch that you have to, for example, those	
+1:57.1 - 2:10.9	T4NL: Nicknames to the to the to the gas chambers, etc. Like this. You have to find creative things that was difficult. The song, for example, was also difficult to translate	
+2:12.2 - 2:32.5	T4NL: Some idioms idiomatic expressions. You have to find goods equivalence in Dutch for it's difficult, but those are for me as a book translator are you know not uncommon to have that kind of issues in a text so I could also say, and	
+2:33.6 - 2:37.3	T4NL: Nothing extraordinary for me. I'm used to this kind of issues.	
+2:38.4 - 2:39.2	Interviewer: Okay.	
+2:39.4 - 2:50.4	T4NL: And the thing about translating or post-editing the other translation was it's quite a different issue because it's like you have to reason.	
+2:51.6 - 3:07.7	T4NL: Upside down, you know, you have to correct the wrong text, which is not which is by far, which is something completely different and making your translation from the start. This is a different competence I would say	
+3:08.9 - 3:10.6	T4NL: quite tricky. I would say	
+3:12.1 - 3:13.9	T4NL: Because I don't think there was	
+3:15.2 - 3:19.6	T4NL: There has not been one single unit on any of this idea in total 120	
+3:19.7 - 3:23.7	T4NL: To 30 234. So how many units.	
+3:24.4 - 3:27.2	Interviewer: There are 234 segments.	
+3:27.2 - 3:31.0	T4NL: Yeah, okay. Yeah, but I don't think in the in the pre-translated one	
+3:31.1 - 3:32.3	T4NL: Half of it.	
+3:33.8 - 3:47.6	T4NL: I don't think there was one single unit that that could pass by itself. Everything, everything has to be edited, which is an editing wrong texts or wrong translation and correcting us is	
+3:49.1 - 3:53.8	T4NL: Is even harder, I think, than doing it yourself from the start.	
+3:56.9 - 4:01.0	Interviewer: So, in your opinion.	
+4:02.5 - 4:08.0	Interviewer: And what do you think of this machine translation proposal.	
+4:11.2 - 4:12.4	T4NL: Oh, I would if I would	
+4:13.9 - 4:18.3	T4NL: Evaluate it as a translation, I would give it a very low point.	
+4:19.9 - 4:36.2	T4NL: It's a very bad translation. There was some huge huge errors and mistakes and missunderstood something that the meaning was complete some some sentences are completely nonsense. That's a terrible, terrible kind of text.	
+4:36.9 - 4:44.5	Interviewer: So in your opinion, how much do you think you use of these MT proposal.	
+4:45.4 - 4:51.2	T4NL: Yeah, I would say. Sometimes I was surprised that there were some good things too.	
+4:52.5 - 4:53.9	T4NL: So, which I could use which	
+4:54.4 - 5:00.8	T4NL: Is which were helpful. And let me say I don't want me to go into the text now right now.	
+5:01.4 - 5:01.7	Well,	
+5:03.2 - 5:03.6	Interviewer: You want	
+5:03.6 - 5:10.4	T4NL: To expressions that were well that were well translated. I mean, it was not hundred percent for that advice, maybe	
+5:11.8 - 5:15.0	T4NL: I don't know 50% percent wrong	
+5:16.6 - 5:17.5	Interviewer: So,	
+5:17.6 - 5:26.7	T4NL: The right PARTS. PARTS OF phrase, some parts of some phrases were were okay so I didn't have to work on them. I just have to check them.	
+5:28.4 - 5:32.3	T4NL: But that they could, they could stand. Let's put it like that.	
+5:34.3 - 5:35.4	Interviewer: And	
+5:36.5 - 5:46.3	Interviewer: So if I understand correctly, there were some proposals that were helpful and then other proposals that were difficult	
+5:46.6 - 5:48.4	T4NL: Or completely wrong. Yes.	
+5:48.5 - 5:55.7	Interviewer: Okay. Oh completely wrong. So did you notice any pattern in those and	
+5:57.3 - 5:58.4	T4NL: Well, for instance.	
+5:59.4 - 6:02.7	T4NL: The machine doesn't catch idiomatic.	
+6:04.0 - 6:10.9	T4NL: Parts of texts, you know, that doesn't give you a ride idiomatic equivalent in Dutch for this.	
+6:11.2 - 6:14.0	T4NL: It is much too literary much too.	
+6:15.2 - 6:15.9	T4NL: Simple	
+6:16.4 - 6:20.4	T4NL: Mm hmm. So there lacks subtlety, I would say.	
+6:21.8 - 6:29.0	T4NL: And then also, it doesn't get it doesn't. It goes from word to word or and then sometimes it's not bad.	
+6:29.7 - 6:48.2	T4NL: But then there is no no relation between sentences. So it's only on a sentence level that something is down. But if the next sentence is translated and it's completely inconsistent with the previous one it's just there. And you have to change everything is terrible.	
+6:48.6 - 6:49.4	Mm hmm.	
+6:51.5 - 7:02.1	Interviewer: So going back to the difficulties in the source text in the English you mentioned, for example, the nicknames of the gas chambers.	
+7:03.2 - 7:11.6	Interviewer: Could you tell me specifically which passages, you found more difficult in the source text.	
+7:13.5 - 7:20.6	Interviewer: The ones that you had to maybe spend think more about them or spend more time on them.	
+7:20.9 - 7:22.7	T4NL: For all those names like	
+7:24.3 - 7:27.8	T4NL: I don't have the source text in English in front of me but	
+7:29.1 - 7:37.7	T4NL: I you know I checked them and there were references could be references to songs or something, you know, you can check, most of them.	
+7:40.0 - 7:41.2	T4NL: And then	
+7:42.5 - 7:54.2	T4NL: You know, you could think of something, you know, I have to give credit to this kind of historical, cultural reference that then it doesn't	
+7:54.9 - 8:07.8	T4NL: You could find something. But then I thought, it doesn't work in the text, you know, can find some an equivalent in Dutch for this, but it's has to be, then you have to change it again to make it useful in the trends in the texts.	
+8:09.0 - 8:12.5	T4NL: To make to simplify before, for example, Easy Go.	
+8:13.2 - 8:18.0	T4NL: Yeah, if you remember that one. It's, you know, the expression is easy come, easy go	
+8:18.1 - 8:18.8	Interviewer: And there. Yeah.	
+8:19.4 - 8:27.2	T4NL: And there's a Dutch translation for this is called so "zo gewonnen zo geronen" which is the proper translation of easy come, easy go	
+8:27.7 - 8:41.5	T4NL: That if I would call the gas chambers chambers "Zo geronen" it doesn't make sense to say. You see, I could not use Easy Go in the proper idiomatic translation. So I had to find something else. And the same one.	
+8:43.6 - 8:47.4	T4NL: I think I used "Uitje" for this because it's like a double double	
+8:49.0 - 8:49.9	T4NL: double meaning.	
+8:52.2 - 8:59.0	T4NL: Like could be like an excursion or going out or something you know this word in Dutch. But anyway, that's what I	
+8:59.0 - 9:02.1	Interviewer: "Uitje" yeaah i know...	
+9:03.8 - 9:12.3	T4NL: This is what I decided to use. This was, you know, you have to make several steps before you come to this kind of thing. So that was, that was a challenge to do	
+9:14.5 - 9:30.3	Interviewer: So where would you say that you had to be more creative in the translation and can you define creativity in translation, in your opinion, obviously.	
+9:31.6 - 9:34.2	Interviewer: So, where, where do you think you have to be more	
+9:34.2 - 9:36.6	Interviewer: Creative in this particular translation.	
+9:37.1 - 9:42.2	Interviewer: And how would you define creativity in translation in general.	
+9:43.6 - 9:49.0	T4NL: Well, I would say, as I said before that these typical kind of things that you have to	
+9:51.3 - 9:55.6	T4NL: Transform make a couple of steps before you come to the right.	
+9:57.7 - 10:18.2	T4NL: In my view, right, kind of translation, my, my goal is to make the text fluent and unnatural in Dutch, of course, that's my main goal. And so that's why you have to, you cannot stick with just a literal translation, but you have to make all these steps to to find the right	
+10:19.6 - 10:26.6	T4NL: nice sounding natural fluent equivalent in Dutch, and that's that's a creative process by itself. Maybe the steps.	
+10:28.3 - 10:34.9	Interviewer: So, apart from the nicknames, where you more creative in this text.	
+10:35.6 - 10:45.8	T4NL: Well, as I mentioned, the song. For example, you have to, you have to make it like a rhyme here and there, and it has to be	
+10:46.7 - 10:55.8	T4NL: Not short or not. Not much longer, and not much shorter, you have to respect it, of course, that it has to be light as well.	
+10:56.6 - 11:09.8	T4NL: So that's, those are typical issues for professional translators, which are or humour when there's when you speak of humour. You also have to be more creative, you know, something suitable	
+11:12.0 - 11:12.7	Interviewer: What about the names	
+11:13.0 - 11:14.5	T4NL: One more specific example.	
+11:14.6 - 11:16.2	Interviewer: Yeah. What about the names for	
+11:16.2 - 11:18.1	Interviewer: Example of the characters.	
+11:18.6 - 11:19.4	Interviewer: Was that	
+11:20.5 - 11:31.4	Interviewer: When the when there was a play on words between Leonora Duncan and to dunk people, mmm, how did you find those play on words with the names	
+11:34.1 - 11:41.7	T4NL: Yeah. Well, normally I don't touch names, just, you know, you just keep them because they are, you know, there they are the names cannot do anything with it.	
+11:42.2 - 11:53.1	T4NL: And if there is a little game or a little joke about dumping dumping dumping people or dunking people that something you, you cannot	
+11:54.2 - 11:56.8	T4NL: Then it's unfortunate that you cannot	
+11:58.4 - 12:03.0	T4NL: Follow that. And then you try to compensate it somewhere else. That's what we do.	
+12:03.8 - 12:13.5	Interviewer: So how did you solve this problem. When the Painter says, oh so you dunk people from Duncan dunk, did you...	
+12:14.1 - 12:23.6	T4NL: Well because you know I translated the are used to work,"dompelaar", "dompelaar", I don't know... I don't remember.	
+12:23.9 - 12:25.1	Interviewer: Yeah, you used that word.	
+12:25.7 - 12:27.1	T4NL: Yeah, so it's	
+12:28.2 - 12:38.0	T4NL: I couldn't really find it just starts with a D that you cannot really follow the word completely or. That's true. That is too English is sometimes you cannot	
+12:39.4 - 12:41.1	T4NL: Do much in this	
+12:43.4 - 12:44.1	Interviewer: Okay.	
+12:44.2 - 12:48.5	T4NL: Which is a little bit just kind of a little failure because you cannot, you cannot	
+12:49.5 - 12:59.0	T4NL: Honour the pun intended. But still, you know, I tried to find somewhere else, something that's	
+13:00.6 - 13:11.4	T4NL: As a little pun in the text as well. I think I manage on other places to make it a little bit more funny than the original or something like that, you understand	
+13:11.8 - 13:14.0	Interviewer: Yes, compensation. So when	
+13:14.3 - 13:16.4	Interviewer: You couldn't be ironic in one part	
+13:16.5 - 13:18.7	Interviewer: You compensated on another part	
+13:18.9 - 13:22.2	Interviewer: Was there a particular part with this name.	
+13:22.3 - 13:24.1	Interviewer: Or was	
+13:24.4 - 13:26.3	T4NL: It a general compensation.	
+13:26.5 - 13:30.4	T4NL: No, not with this particular name. I don't think this particularly	
+13:39.7 - 13:44.0	T4NL: Have to check if I produce, I don't know, just in general.	
+13:45.4 - 13:48.2	Interviewer: And what is creativity for you.	
+13:49.4 - 13:51.2	Interviewer: in translation.	
+13:52.5 - 13:57.5	Interviewer: How do you, how would you define creativity in translation.	
+13:59.2 - 14:04.8	Interviewer: There isn't a right or wrong. I just want to know your your own thoughts on this.	
+14:15.1 - 14:21.9	T4NL: Well, you have to trace your vocabulary and try to	
+14:26.0 - 14:30.2	T4NL: Just in order to make the text as natural Dutch as possible.	
+14:32.2 - 14:37.9	T4NL: Is that I think that's an if you manage to do that. I think that's that's that's created	
+14:40.0 - 14:40.2	Interviewer: But	
+14:43.1 - 14:44.0	Interviewer: Are all the sentences.	
+14:44.6 - 14:47.8	Interviewer: Do you require creativity in all the sentences.	
+14:48.9 - 14:50.2	T4NL: In all the sentences.	
+14:51.5 - 14:51.8	Interviewer: Yeah.	
+14:56.1 - 15:03.4	T4NL: I think so, yes. I every unit needs. That's why you know I had to revise every single unit of the pre-translation.	
+15:05.2 - 15:06.0	T4NL: To	
+15:07.0 - 15:12.1	T4NL: To to improve it and if you include something in the language to make it better.	
+15:14.5 - 15:16.4	T4NL: That's, that's a creative act, I think.	
+15:17.6 - 15:28.0	Interviewer: Okay. And do you think that you were mentioning that you had to review all the MT proposals so	
+15:29.4 - 15:42.2	Interviewer: In the final product that you produce what do you think the impact of this machine translation was on your creativity because you already had a proposal, right.	
+15:43.0 - 15:45.1	Interviewer: As opposed to the other segments.	
+15:45.3 - 15:47.3	Interviewer: Where you didn't have a proposal.	
+15:47.7 - 15:52.6	Interviewer: What do you think the impact of this MT on your creativity.	
+15:56.1 - 15:56.8	T4NL: It was	
+15:58.0 - 16:05.3	T4NL: Quite, quite big. The impact has quite the, you know, yeah, you have to be more creative correcting something nicely.	
+16:07.3 - 16:13.7	T4NL: It's a bigger effort cognitively and technically and creatively to to improve	
+16:15.0 - 16:18.6	T4NL: The text to say failures, than to start from	
+16:19.8 - 16:20.6	T4NL: Fresh from the start	
+16:21.8 - 16:25.9	Interviewer: And do you think the final product and	
+16:27.3 - 16:30.7	Interviewer: So do you think your post edited version.	
+16:30.8 - 16:37.4	Interviewer: Yes, and you're human version. Let's call it the one that you did from the start from scratch.	
+16:38.6 - 16:46.8	Interviewer: Do you think these two versions will have an impact on the reader. Do you think the reader will notice these two	
+16:48.0 - 16:49.4	Interviewer: Types of	
+16:51.0 - 16:52.0	Interviewer: Translation modalities	
+16:52.8 - 16:56.6	T4NL: Now, because in in in the post editing. I use my own style.	
+16:57.2 - 16:58.0	Okay.	
+16:59.4 - 17:06.9	T4NL: So I guess we could test it, it actually have someone read it and said, You see is	
+17:08.2 - 17:11.0	T4NL: Going somewhere. Do you see a change	
+17:12.4 - 17:18.5	T4NL: Halfway or or one point at which point to do you do you think whatever but	
+17:18.5 - 17:21.2	T4NL: I am quite confident that it's	
+17:21.7 - 17:26.4	T4NL: That it is ok that it could be seen as one translation.	
+17:28.2 - 17:44.0	Interviewer: So if you gave a reader a translation that was completely done without any MT, then another version that was post edited entirely post edited.	
+17:44.6 - 17:48.4	Interviewer: And a version directly from the machine.	
+17:48.7 - 17:54.3	Interviewer: So you have three versions, the human the post edited and the MT.	
+17:55.0 - 17:57.4	Interviewer: What do you think the reader.	
+17:58.1 - 18:05.5	Interviewer: Would make out of these three versions, what will the impact on the reading experience.	
+18:07.4 - 18:19.6	T4NL: Well, I think that the reader, whoops, considered the post-edited one and one that was done completely by me from scratch as identical	
+18:20.7 - 18:21.5	Interviewer: Okay.	
+18:23.1 - 18:27.9	Interviewer: And the MT. What, what do you think the reading experience would be learned.	
+18:28.1 - 18:29.3	T4NL: What do you mean by the MT.	
+18:30.2 - 18:32.5	Interviewer: The machine translated if we took	
+18:32.6 - 18:35.5	Interviewer: a text and only machine translation, no human intervention.	
+18:35.6 - 18:40.1	T4NL:  Then they would say what nonsense is this, this	
+18:41.0 - 18:42.1	Interviewer: As a reader.	
+18:44.3 - 18:44.4	T4NL: Yeah.Oh,	
+18:44.5 - 18:45.1	T4NL: Yeah, this	
+18:45.2 - 18:49.3	T4NL: Doesn't make there are phrases that don't make any sense completely	
+18:49.9 - 18:53.3	Interviewer: And do you think all the readers will react in the same way.	
+18:55.3 - 18:57.3	Interviewer: Dutch readers, obviously.	
+18:57.4 - 18:59.1	T4NL: Yeah, if it's a good reader. Yes.	
+19:00.3 - 19:01.8	Interviewer: What is a good reader.	
+19:02.2 - 19:10.0	T4NL: Well as somebody who notices errors and somebody will notice a little bit an intelleigent reader would	
+19:11.1 - 19:18.5	T4NL: immediately see that it's full of mistakes and inconsistencies and errors and illogical things and	
+19:20.4 - 19:21.0	T4NL: Stuff.	
+19:22.6 - 19:25.2	Interviewer: So if you were to have	
+19:26.8 - 19:29.5	Interviewer: as a Dutch reader.	
+19:30.8 - 19:32.5	Interviewer: The English only	
+19:33.7 - 19:43.8	Interviewer: Or the Dutch that was machine translated. What do you think the Dutch reader will go for? What do you think a Dutch reader would prefer	
+19:44.9 - 19:45.9	T4NL: The English	
+19:46.7 - 19:49.0	Interviewer: The English version, why	
+19:49.7 - 19:55.0	T4NL: Yeah, because of good English, of course, is preferable than that, that translation.	
+19:56.1 - 19:59.1	T4NL: I would say that maybe I'm biased.	
+20:00.4 - 20:03.2	Interviewer: Well, of course, is your opinion. I'm asking you.	
+20:04.9 - 20:07.7	T4NL: Yeah, I would. I would prefer the English	
+20:08.8 - 20:30.4	Interviewer: Okay. Um, can you explain to me a little bit how was your translating process. So how was your translating process in this particular experiment or in general. What I mean by this is some people say, or	
+20:30.4 - 20:33.8	Interviewer: First, I read the source text then I do this.	
+20:34.1 - 20:46.2	Interviewer: Or I look for the difficult parts first and then I look for the easy part. How do you work with any texts and in particularly how did you work with this text.	
+20:47.9 - 20:48.6	T4NL: In geneal oh	
+20:49.7 - 20:52.0	T4NL: I always read with the source text.	
+20:52.5 - 20:58.3	T4NL: Okay, if it is a whole book I just go diagonally	
+20:59.3 - 21:08.8	T4NL: I just go quickly through it. But for shorter texts I read completely the source text and then I can then I start working. And then I just start you know	
+21:09.5 - 21:18.4	T4NL: Page one per sentence I don't go looking for. While I am reading only reading the source text I already noticed. Oh, this is quite	
+21:19.0 - 21:35.2	T4NL: Difficult or this is funny or this this I don't understand or whatever. But then I don't pay much attention to the specific issues. I just start at the beginning translating and then I solve the problems when they come	
+21:35.4 - 21:41.8	Interviewer: Okay. And sorry, do you print or do you do this online.	
+21:43.1 - 21:44.1	Interviewer: The reading	
+21:45.6 - 21:50.6	T4NL: Online. I don't. I never print anything when I'm translating I have the two	
+21:50.7 - 21:52.0	The source text and my	
+21:53.2 - 21:56.1	T4NL: On to the two documents and on the one page on my screen.	
+21:58.4 - 22:13.7	Interviewer: And do you print out. How do you review, then what is your review process, if any, maybe you just... some people, you know, they translate a sentence and they consider that finished. Some people go through several review processes, what is your process?	
+22:14.5 - 22:32.8	T4NL: I review review, maybe four or five times that and also in the process. And also, of course, when I think I'm finished. Then, you know, I review two times and on your request I did it three or four times.	
+22:34.2 - 22:39.9	T4NL: Because normally what I do normally is after I finish a text I have a reader.	
+22:41.7 - 22:43.2	T4NL: Somebody outside	
+22:43.5 - 22:46.4	T4NL: Okay, who is who is reading my translation.	
+22:46.4 - 22:50.2	T4NL: And because sometimes as a translator. You don't see your errors anymore.	
+22:50.6 - 22:51.5	T4NL: ***He is false.	
+22:51.8 - 22:55.9	T4NL: So I have somebody outside who's getting my my text for me.	
+22:57.0 - 23:04.2	T4NL: And it's just very helpful, but I couldn't do that this in this translation, because the files were too complicated, and I	
+23:04.2 - 23:04.4	Interviewer: Couldn't	
+23:04.7 - 23:16.1	T4NL: I couldn't send it also you know when you're working in Word, you can have many editing tools that you didn't have that you didn't, he didn't have in your in your project.	
+23:16.3 - 23:18.6	Interviewer: So which editing tools do you use	
+23:20.3 - 23:25.9	T4NL: Like for example, dictionaries. Of course I use outside dictionaries online.	
+23:27.0 - 23:30.2	T4NL: To find synonyms or meanings, whatever.	
+23:31.9 - 23:46.2	T4NL: But also, you know, just a bit of editing the little editing in Word, things like delete are cut and paste and change the syntax is etc, which was not so easy in this which was much, much more simple in this one.	
+23:47.1 - 23:50.7	T4NL: Okay, so that was a little issue.	
+23:51.9 - 24:07.5	T4NL: But then what I do... the reviewing when I, for one, for example, one single unit or you call a unit, I would translate it, I would edit it or translated and edited or edit or post-edited and then	
+24:09.5 - 24:24.9	T4NL: I go a little bit down next unit next translation and but then I can go back to the previous one. And then, you know, I do by by paragraph. I do like the reviewing in the process.	
+24:26.2 - 24:38.7	T4NL: And sometimes you know when I make it first as a unit or make just a literal translation direct translation and then I go back	
+24:40.0 - 24:55.0	T4NL: And try to get a fresh mind read my very first translation and then I you know I decide to edit it directly to make it more fluent or to inject insert something more idiomatic	
+24:56.7 - 25:00.6	T4NL: Or to change a synonym or something like that. It's like editing.	
+25:01.6 - 25:11.3	T4NL: Okay, so it's during the process and after the process several times. I think I'd see every unit four or five times before I submit something	
+25:12.3 - 25:17.3	Interviewer: And your the person that edits for you or correct or	
+25:19.6 - 25:20.8	T4NL: It's called a	
+25:23.0 - 25:23.7	T4NL: Nalesser in Dutch	
+25:25.2 - 25:25.8	Interviewer: Okay.	
+25:25.9 - 25:30.2	T4NL: So this. It's not a. It's not a professional translators just somebody who	
+25:30.7 - 25:31.7	T4NL: critically looks at my Dutch	
+25:32.2 - 25:36.5	Interviewer: So each she or he only reads the Dutch not the source.	
+25:37.2 - 25:47.8	T4NL: Yeah, if, if something is if something is wrong is just doesn't make sense in her interview she looks at the original to the source text.	
+25:48.3 - 25:59.5	T4NL: And she says, oh, you should better is something has to give suggestions or she only says in Dutch, "dit klopt niet". And this doesn't make sense.	
+26:00.9 - 26:05.8	T4NL: Or not a nice rhythm...rhythm is very important in	
+26:06.3 - 26:07.0	literary texts.	
+26:08.2 - 26:10.6	T4NL: So, she'd say, it's, it's	
+26:11.7 - 26:12.5	T4NL: bumpy	
+26:14.0 - 26:17.3	T4NL: She could, you know, and then I review it and I'll make it more fluent.	
+26:19.1 - 26:20.1	T4NL: That's very helpful.	
+26:20.9 - 26:26.8	Interviewer: And this person is somebody that works with you or works for the publishing house.	
+26:27.8 - 26:32.0	T4NL: No, this is entirely before anything goes to the publisher. This is	
+26:32.4 - 26:34.3	Interviewer: OK, so my own. So you have	
+26:34.3 - 26:35.6	Interviewer: Your, your own	
+26:36.8 - 26:37.3	T4NL: It is a friend.	
+26:37.8 - 26:42.9	Interviewer: Is this common in in in literary translation in Dutch?	
+26:44.0 - 26:46.4	T4NL: Many people do this. Yeah. Many people do this.	
+26:47.3 - 26:49.6	T4NL: Because sometimes you don't see it anymore yourself.	
+26:49.6 - 26:50.8	Interviewer: I understand that.	
+26:50.8 - 27:00.3	T4NL: Yeah. And then also, you know, later on, and I think it's finished my co reader is also satisfied with your remarks and the way I changed everything.	
+27:02.0 - 27:04.6	T4NL: Normally I don't I don't I don't send her	
+27:05.6 - 27:15.8	T4NL: My, my editing or just get it one time from her because I just, you know, she's not professional some somebody doesn't matter. She only comes with suggestions.	
+27:16.9 - 27:29.0	T4NL: And remarks and then I do my professional editing and then I sent to the publishing house and there they also have somebody "postklaar maken". You know the one who's	
+27:29.6 - 27:31.1	T4NL: Correcting again also	
+27:31.3 - 27:36.7	T4NL: And then we have discussion sometimes about things with as a translator is I have the final word.	
+27:39.0 - 27:47.5	Interviewer: Okay, so then I wanted to ask you, in this case, if you were satisfied with the translation that you did.	
+27:49.6 - 28:04.7	T4NL: Yeah, I was, as I told you, then I sent my first version. I said, I'm a little bit. A little bit unsure, because nobody nobody could check me. But anyway, and I was counting, you know, normally I could count on the	
+28:06.4 - 28:26.3	T4NL: On the on the corrections by the publisher. But in this case, there was no way to to do to do it. So I tried to. That's why I went again through it and I did find some errors and typos and things I I prefer to to improve. So actually, that was a good	
+28:28.3 - 28:30.8	T4NL: Another good additional round of reviewing	
+28:32.5 - 28:33.3	T4NL: Correcting	
+28:33.8 - 28:41.8	Interviewer: Okay, and you were mentioning that you use dictionaries and	
+28:42.9 - 28:43.8	Interviewer: Online.	
+28:44.3 - 28:47.0	Interviewer: Yeah, is it all online.	
+28:47.7 - 28:48.2	Sorry.	
+28:49.3 - 28:55.6	Interviewer: Is it all online? Is it all different reference I all the references that you use online, or do you also use printed dictionaries.	
+28:57.7 - 28:58.4	T4NL: You mean books.	
+29:00.2 - 29:02.1	T4NL: No, I only use online dictionary.	
+29:02.7 - 29:04.5	Interviewer: Okay, so	
+29:05.1 - 29:11.4	T4NL: Or Google or just Google or Wikipedia or something, anything could could be like a, you know, to research something	
+29:11.9 - 29:22.1	Interviewer: So in this process online. Do you ever use Google Translator or DeepL or Linguee	
+29:22.3 - 29:23.3	Interviewer: Any tool	
+29:23.7 - 29:24.1	No.	
+29:25.6 - 29:26.2	T4NL: Never	
+29:28.4 - 29:28.9	T4NL: Why	
+29:32.3 - 29:35.8	T4NL: Well, because they are much better to real, you know, professional dictionaries.	
+29:39.3 - 29:42.1	T4NL: like the Van Dale, the Oxford Dictionary, you know, which is not bilingual but...	
+29:43.4 - 29:51.0	T4NL: To the research expressions or even the free dictionary or there is many sources or the	
+29:52.0 - 29:53.0	T4NL: You know, for	
+29:55.7 - 29:56.5	T4NL: I forgot the name	
+29:57.7 - 29:59.2	T4NL: For swearing.	
+30:00.0 - 30:00.6	T4NL: Special.	
+30:00.8 - 30:03.9	Interviewer: Oh the Urban Dictionary. Is it the Urban dictionary?	
+30:03.9 - 30:08.1	T4NL: Yeah, for example, yeah, all kinds of sources can be useful.	
+30:09.5 - 30:18.4	T4NL: And from one, you get to another, you know, if you links to something else, something else to something else or, you know, especially if you talk about	
+30:19.6 - 30:32.1	T4NL: What we call the "realia" on which are typical for that specific country or you know names names of geographical places or names of shops or something like that, you can research.	
+30:32.7 - 30:39.1	T4NL: Or when there is a reference to another book or something. You can go from book to book. The book to find	
+30:40.4 - 30:43.1	T4NL: Yeah and you know you can go in depth just online.	
+30:44.8 - 30:48.7	T4NL: But I never use Google Translate for a suggestion for a word or something.	
+30:48.8 - 30:49.8	Interviewer: Or DeepL	
+30:50.4 - 30:51.8	T4NL: I don't even know what that is.	
+30:53.0 - 31:07.3	Interviewer: Okay, so do you. If you were to suggest how to improve machine translation for you to use it. What would you say	
+31:09.9 - 31:13.6	T4NL: Well, that should improve the idiomatic translations.	
+31:16.0 - 31:17.0	T4NL: And they should improve	
+31:18.9 - 31:19.2	T4NL: In	
+31:20.4 - 31:23.7	T4NL: consistency between sentences and paragraphs.	
+31:24.8 - 31:30.9	T4NL: Which they don't, they can they can even contradict one sentence to another day can be contradictory.	
+31:32.3 - 31:35.0	T4NL: So that that should be improved completely	
+31:36.4 - 31:56.9	T4NL: And I just also little things like punctuation, like the the quotes, you know, the quote signs are reversed in that, you know, double quotes is the single quote sign in Dutch and things like this that they don't even manage that. So that should be improved.	
+32:02.0 - 32:07.9	T4NL: Yeah, for example, also in names you know that Chicago Lying in hospital Lying is a proper	
+32:10.0 - 32:12.4	T4NL: English word to do, which means	
+32:13.8 - 32:17.7	T4NL: "***Kan clinic" something you know that I'm amazed that they don't even	
+32:18.8 - 32:22.4	T4NL: See this or translate this for you. You know, you have to find yourself.	
+32:23.6 - 32:33.9	T4NL: With you know i think it's in general that it's still very weak. I know it has improved a lot since a couple of years, and sometimes they even managed to make a correct sentence, but	
+32:39.3 - 32:41.6	T4NL: It needs it still completely insufficient.	
+32:42.3 - 32:52.9	Interviewer: So if these if these things were fix. So the proposals were better but not perfect. Would you like to use it.	
+32:55.1 - 33:04.5	T4NL: I might because it would, of course, you know, if 80% is OK. But still, you would have to check every single word. So.	
+33:05.7 - 33:15.6	T4NL: You don't win so much because even if 80% is correct, you have to check this. And then the the 20% which is not correct in an improved version.	
+33:16.9 - 33:17.9	T4NL: You have to	
+33:19.0 - 33:24.6	T4NL: to redo all this, so I wonder if you win much time with this.	
+33:27.4 - 33:54.8	Interviewer: And do you think that in language combinations that are that publishing houses don't usually buy, so for example in language combinations like Romanian-Dutch or Macedonian-Dutch or a Slovak-Dutch do you think machine translation can play a role in literary texts?	
+33:57.4 - 33:58.4	T4NL: I have no idea.	
+34:01.1 - 34:10.1	T4NL: I assume not, but even so... You mean like people who have a dialect. For example, if there is a dialect in English text.	
+34:11.1 - 34:18.1	Interviewer: No, I mean that usually a lot of a translation happens from English	
+34:20.5 - 34:39.4	Interviewer: So some languages lesser known languages like Slovak or Macedonian or Romanian don't get translated into Dutch so could machine translation play a role in translating this language combinations	
+34:40.6 - 34:43.0	T4NL: I would not have been, I wouldn't trust it.	
+34:44.8 - 34:45.4	Interviewer: Why	
+34:46.3 - 34:58.6	T4NL: Because probably because I assume that if they go from Romanian to... for instance, the meaning that they go from Romanian to English and then from English to Dutch	
+34:59.6 - 35:02.9	T4NL: It's like indirect translation. I mean,	
+35:03.6 - 35:07.9	Interviewer: It could be, it could be direct as well. It could be in direct. Yes.	
+35:08.9 - 35:14.0	T4NL: Yeah, well, then it's in general in my circles.	
+35:15.2 - 35:23.8	T4NL: People don't trust indirect translations and use of machines for any kind of literary translations.	
+35:25.1 - 35:29.6	Interviewer: Okay, so now that you live you live in Spain. Right.	
+35:30.1 - 35:30.7	T4NL: Yes.	
+35:31.7 - 35:33.0	Interviewer: Do you use	
+35:34.1 - 35:34.6	Interviewer: Google	
+35:34.6 - 35:40.8	Interviewer: Translate to understand the world around you in Spanish, or are you fluent in Spanish.	
+35:41.9 - 35:47.2	T4NL: No, sometimes I use on my telephone. I use Google Translate to find a specific words.	
+35:48.9 - 35:51.8	T4NL: In Spanish, to have the translated into Dutch	
+35:52.5 - 35:56.2	T4NL: And half of time doesn't make any sense either	
+35:59.1 - 36:00.8	Interviewer: So it is not useful for you?	
+36:00.9 - 36:02.6	T4NL: Sometimes a little bit. Yes.	
+36:04.7 - 36:05.3	Interviewer: Okay.	
+36:05.6 - 36:07.7	Interviewer: So how do you use it.	
+36:07.9 - 36:13.2	Interviewer: What kind of things do you use Google Translate for words or for	
+36:14.8 - 36:19.3	Interviewer: I don't know restaurant pages. I don't know how do you use it.	
+36:19.5 - 36:20.6	T4NL: Not just for words.	
+36:20.9 - 36:22.8	Interviewer: Just for our words. Okay.	
+36:24.8 - 36:31.6	Interviewer: Okay, so is there anything else that you would like to mention in this interview.	
+36:33.7 - 36:40.0	Interviewer: About translation about literary translation about machine translation, whatever you want to mention	
+36:42.9 - 36:47.1	T4NL: Well, I mentioned already, the type of type of errors that there are still.	
+36:49.1 - 36:50.4	T4NL: Involved in the	
+36:51.7 - 36:53.2	T4NL: machine translations.	
+36:54.3 - 36:56.8	T4NL: I think I mentioned already, what I	
+36:58.2 - 36:59.3	T4NL: What I wanted to say.	
+37:02.9 - 37:05.8	T4NL: Yeah, I don't know if it's useful for you because	
+37:08.5 - 37:20.0	T4NL: There's an emotional component in this because I get emotionally a little bit upset and irritated if I see	
+37:21.4 - 37:25.4	T4NL: If I see all these errors. I get you know it's it's	
+37:27.8 - 37:40.6	T4NL: It's like Jesus. What are this, what are they doing because like I get. It's not like this. Let me make let me change it into this, I get upset about it if I don't like it at all.	
+37:41.3 - 37:53.8	T4NL: I can tell you on the sideline as I can, I can tell you I have, you know, I'm a book translator, but sometimes I have, I have one other outside client, which is commercial commercial client and I	
+37:54.3 - 38:01.5	T4NL: Was like I translate for a fee **** in Holland and I translate	
+38:03.2 - 38:07.0	T4NL: Like press releases and the website texts and	
+38:08.1 - 38:15.0	T4NL: Publicity texts or this, for this guy for this company and he sometimes he sends me	
+38:17.3 - 38:25.0	T4NL: A suggestion of the the text are in English, but he sends me the a Google Translate proposal.	
+38:26.5 - 38:35.7	T4NL: And I've, you know, and so I have to edit and edit and edit and post-edit and change everything. And I've even told him, please don't send me	
+38:36.9 - 38:46.5	T4NL: anymore. I don't. I refuse to work it does kind of terrible because they are too upsetting to me, you know. So I prefer much more to have the original English	
+38:49.6 - 38:56.9	Interviewer: Is this feeling ever positive? Do you ever encounter a sentence where you go, Oh, well that's good?	
+39:01.0 - 39:02.7	T4NL: Well, and in...in yeah...	
+39:04.4 - 39:19.6	T4NL: The very, very minimal. And it did happen in this text in to be or not to be, it happens that sometimes I thought okay, this is acceptable. This is acceptable. This can pass without editing little parts were quite okay. Okay.	
+39:20.8 - 39:30.1	T4NL: But that was only you can I don't know because you saw yourself all the differences I have made the changes I made from the	
+39:31.2 - 39:35.2	T4NL: From the machine text and my post editing.	
+39:36.5 - 39:40.1	T4NL: It's a lot. Now it's almost everywhere that you see this	
+39:41.1 - 39:45.4	Interviewer: I need to look at all the data to see all the changes.	
+39:45.5 - 39:46.2	T4NL: Yeah, you	
+39:46.3 - 39:49.4	T4NL: See it. This is a lot. It's a lot of work.	
+39:51.1 - 39:54.0	T4NL: So you mean all this extra work this	
+39:55.0 - 39:56.0	T4NL: Is not so	
+39:57.3 - 39:59.1	T4NL: For me it doesn't have much value.	
+40:01.5 - 40:02.2	Interviewer: Okay.	
+40:03.6 - 40:06.3	Interviewer: So I'm going to stop the recording then	
+40:06.7 - 40:07.4	All right.	

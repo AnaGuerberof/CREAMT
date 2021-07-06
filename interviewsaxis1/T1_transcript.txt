@@ -1,0 +1,351 @@
+0:02.2 - 0:03.9	Interviewer: Okay so we are recording	
+0:05.0 - 0:06.0	Interviewer: Good morning.	
+0:08.2 - 0:10.9	Interviewer: So I wanted to ask you to give	
+0:11.0 - 0:16.0	Interviewer: Me your general views on translating this text.	
+0:17.5 - 0:18.0	T1CA: Well,	
+0:19.4 - 0:30.7	T1CA: The text is pretty easy. But there are some puns with the names and that's probably the most difficult part deciding what to do with the names, which I think is something	
+0:31.1 - 0:48.1	T1CA: You would usually decide with the editor with the publisher and also there are some yeah these names for the example the Catbox and all the names that are given to the gas chambers those things were a little bit difficult to find	
+0:49.1 - 0:53.2	T1CA: Something because they have to be short. You cannot add any notes.	
+0:54.4 - 1:02.0	T1CA: But that was the most difficult part I think for the rest, I didn't think it was very difficult. Some words were	
+1:03.2 - 1:24.6	T1CA: the structure, the syntactical structure was very easy know sometimes kind of repetitive, no? The painter make that and the painter make that. So it was just a matter of imitating this style. And yeah, what do you want me to talk about the software, the interface experience.	
+1:25.1 - 1:26.8	Interviewer: If you want to, yeah.	
+1:27.0 - 1:31.8	T1CA: Yeah, yeah. Because that's I usually translate with MemoQ. so with	
+1:33.7 - 1:40.9	T1CA: Computer Aided translation and I'm very used to having this sub...	
+1:42.5 - 1:49.2	T1CA: Both texts on screen but... the software you sent me	
+1:49.4 - 1:51.5	Interviewer: Oh, you mean you mean PET.	
+1:51.9 - 1:55.8	Interviewer: The translating software not the MT proposals.	
+1:55.8 - 2:07.9	T1CA: Yeah yeah what yeah well well yeah both of them i mean the the the act of translating bilingually because usually literary translators don't translate with any tech tools.	
+2:10.1 - 2:19.8	T1CA: But the problem is that it's very basic, so you cannot or I don't know how to do a search and replace, which is something I use very often. So, and then the	
+2:20.4 - 2:27.7	T1CA: That's the one of the main points that it's very basic. So we have to be tricking oh yeah I had to push this button or to go to go ahead	
+2:28.0 - 2:33.7	T1CA: And then the problem to export the text because I always saw that final revision is always made on the	
+2:34.3 - 2:44.2	T1CA: Final text without taking any notice of the of the source text and I usually read it a couple if if the short text I read it many times. So	
+2:45.0 - 3:02.5	T1CA: I would probably have read it two or three more times if I had the option to export easily. So I'm not sure about. Yeah. So if the result of the translation is the exact result, I would have when... If I work with my own tools, you know	
+3:02.7 - 3:03.4	Interviewer: Mm hmm.	
+3:05.6 - 3:06.6	T1CA: What else, I don't know.	
+3:07.6 - 3:08.0	T1CA: Oh,	
+3:08.2 - 3:11.0	Interviewer: I wanted to ask you, and	
+3:13.0 - 3:14.1	Interviewer: You mentioned	
+3:14.5 - 3:22.3	Interviewer: The main difficulties but could you tell us specifically which passages, you found more difficult.	
+3:23.6 - 3:29.1	T1CA: Um, yeah, the one with the many names that with the cat box and the	
+3:29.2 - 3:32.4	Interviewer: the nick names..	
+3:32.6 - 3:35.7	T1CA: yeah... and the Lucky Pierre because those are	
+3:36.9 - 3:46.9	T1CA: Some references are very cultural related. So it's difficult to really find an equivalent without making it too long or	
+3:47.8 - 3:54.3	T1CA: Having a direct, direct thing that it's a straightforward. So this part, I think I spent a lot of time.	
+3:55.0 - 4:05.2	T1CA: Looking for names that would, that could work because they are used afterwards. So yeah, those then deciding the names, what to do with the names of the of the	
+4:05.7 - 4:12.1	T1CA: Of the characters. So basically, with Whealing. That sounds like... I talked with the...	
+4:12.8 - 4:27.6	T1CA: native... I usually ask my question to native speakers to say, oh, do you think there's a pun with these and what what what what can what sort of ideas that bring so with Whealing, wailing like kind of wailing.	
+4:29.6 - 4:39.5	T1CA: Connotations... and that with Duncan. There's the pun in the text, I decided to leave Hitz, just as it is because	
+4:40.2 - 4:49.5	T1CA: Yeah, my native speakers said well for me... Hitz is just like hits know how many dead people, no? three hits, three targeted things or it could be	
+4:50.2 - 5:02.7	T1CA: Reminded also her of Hitler because of the gas chambers. So it's what was okay like this, but then with Duncan, then that the decision was to be made, whether to catalanize names.	
+5:03.2 - 5:13.3	T1CA: I don't I didn't think it was a good idea because all the context was very English. And so I decided to use English names which had	
+5:14.4 - 5:28.5	T1CA: Which if you read it with a Catalan mind you would read it in a different way. So that's why Whealing is called Affleck, which is an English surname, but for a Catalan comes to affliction so kind of relevant	
+5:29.7 - 5:30.0	Interviewer: Yeah, I think that was good.	
+5:30.2 - 5:33.0	T1CA: So, but, but, but I think that there there should be	
+5:34.8 - 5:42.4	T1CA: A note at the beginning so that the people know that, oh, I have to read the English name, but with a Catalan mind.	
+5:43.5 - 5:46.2	T1CA: And that's why Duncan becomes Pelham	
+5:47.2 - 5:50.1	T1CA: Name, too. So to be able to make this work.	
+5:51.8 - 5:54.6	T1CA: Yeah. Besides that, I. There were also some words.	
+5:56.2 - 5:59.1	T1CA: At the end I don't remember exactly which ones I could look	
+6:01.6 - 6:19.9	T1CA: that were very similar. So I had to look for, for a lot of synonyms. So to avoid repetitions and but then the synonyms, where I wasn't aware of fluid enough in the sense of literary or not I, I used "lugubre" and I use "devastadora" and	
+6:21.3 - 6:32.5	T1CA: I don't know which ones. It was three or four words that were more or less the same. And I had to look for synonyms and say that. And what else specifically	
+6:34.2 - 6:34.9	T1CA: I don't know.	
+6:36.5 - 6:37.7	T1CA: More specific things	
+6:38.4 - 6:40.1	Interviewer: And	
+6:42.2 - 6:44.9	Interviewer: Where in the text.	
+6:46.8 - 6:57.9	Interviewer: Maybe on the things that you have already mentioned. Okay. But where would you say that you had to be more creative in the text.	
+7:02.2 - 7:15.4	T1CA: I think that is with the names. The, the extra names for the gas chambers with this Lucky Pierre. Yeah. And yeah, I don't remember there were Happy Hooligan, I think there was	
+7:17.2 - 7:26.6	T1CA: All of those. Some of them. Yeah, with it, with the Lucky Pierre, I was giving it some thought doesn't found what you know what that it was related to	
+7:27.7 - 7:30.0	Interviewer: There was also a song.	
+7:31.4 - 7:38.8	T1CA: Yeah, but the song came from this ... Yeah, the song. The song that the that the medical assistant... Yeah.	
+7:38.8 - 7:47.2	T1CA: Yeah, yeah. This is fun, especially. I didn't find it especially difficult, it was very like basic and I didn't find it...	
+7:47.4 - 7:51.6	Interviewer: Did you try to use rhyme or did you	
+7:53.1 - 7:55.6	T1CA: No, I think there was no rhyme in the original author, was there rhyme?	
+7:55.7 - 7:57.2	Interviewer: Maybe a little bit of rythm.	
+7:57.9 - 7:58.9	Interviewer: More than rhyme	
+7:59.0 - 8:09.8	T1CA: Yeah, no, no. I read it aloud. And at first, my first draft was longer so it was more literal. And then I thought, well, that's too long. So to have kind of	
+8:10.4 - 8:24.5	T1CA: Musical thing all the sentences should be the same length, more or less to shorten, especially the last one I think. But that's most, yeah, most of the times just making it a little bit symmetrical	
+8:24.9 - 8:25.1	Interviewer: Like	
+8:25.4 - 8:31.7	T1CA: Point that point of view and yeah I always read aloud all the translation. So two things sound good and I thought it sounded okay.	
+8:33.7 - 8:40.6	Interviewer: So this is what I was going to ask you. What is your translation process, not only for this	
+8:41.1 - 8:43.1	Interviewer: Translation, but you mentioned now.	
+8:43.5 - 8:45.0	Interviewer: That you read them out loud.	
+8:45.6 - 8:46.5	T1CA: Yeah, my	
+8:47.8 - 8:58.6	T1CA: Yeah, my standard translation process is I usually export the texts which takes a lot of time because I usually get a PDF and since I work with MemoQ, I have to	
+8:59.8 - 9:00.5	T1CA: Make an	
+9:01.6 - 9:11.1	T1CA: OCR, optical recognition and then that the paragraphs and the pages are okay so it takes what usually whole day or two days depending on the length	
+9:11.8 - 9:28.3	T1CA: Of checking that the the digitalization of the texts coming from a PDF to a Word document. Then I imported into into MemoQ, and I made a... I work paragraph by paragraph, not by sentences because the sentence is not the meaning unit.	
+9:29.8 - 9:36.4	T1CA: And then I do a fast translation. I go from beginning to end, but I usually read the text before...	
+9:37.8 - 9:38.2	Interviewer: Yeah. Yes, some people don't.	
+9:40.5 - 9:44.0	T1CA: I do, once I tried not to because I spoke with a	
+9:45.1 - 9:46.0	T1CA: translator that I really	
+9:47.2 - 9:50.9	T1CA: Appreciate, and he said, oh, I don't read them. I said, oh, maybe I'm doing it wrong	
+9:52.8 - 9:55.3	T1CA: and I tried it and it was horrible. Because then I had to	
+9:56.2 - 10:04.2	T1CA: Review a lot of things when I came to the end. So that was not a good idea, you only don't read them with essays cause I think it is different.	
+10:08.2 - 10:19.8	T1CA: You just go along so I just do a fast translation and typically I'll stop there. I find some difficult when I find difficulties and I don't find a solution. I just mark them with three x X X.	
+10:21.9 - 10:29.5	T1CA: Yeah. And then I also mark some things to ask the native speaker, I always ask natives for lots of things and ...	
+10:30.5 - 10:38.4	T1CA: Language level, who would say that word, or what do you mean exactly, or I understand the words but i don't i don't get the meaning because I'm so I usually	
+10:38.9 - 10:49.8	T1CA: Make two kind of notes. So this is that I have to come afterwards and revise and review it and think of it, then the list for the native speaker. Then when I reach the end	
+10:51.0 - 10:54.6	T1CA: And I review the difficult parts.	
+10:56.0 - 11:13.2	T1CA: Usually I ask,  discuss them with someone, I don't know my partner, how would you say, blah, blah, blah. And then I send the list to the native speaker I put all the changes I enter the changes into the main MemoQ, I	
+11:15.4 - 11:27.2	T1CA: Now, checking and then the first revision I make three reviews. The first one is made... I reread the original text first text and I reread the target. So paragraph by paragraph.	
+11:29.7 - 11:38.0	T1CA: That is very time consuming because, yeah, it's very long and yeah but then I really check that I haven't missed any sentences in the middle of a paragraph.	
+11:38.3 - 11:46.3	T1CA: That I haven't left out. I don't know, a "no", or something that's very basic some sometimes it happens, no?, because you are just translating and you forget a "no"...	
+11:47.0 - 12:04.4	T1CA: It was just the opposite. And when I finish the bilingual review, then I read on screen just the Catalan translation and sometimes I think, oh, this sentence is strange. So I go again and check, which is the original but	
+12:05.5 - 12:11.5	T1CA: usually find some things.. After this revision, I export it to	
+12:13.4 - 12:29.3	T1CA: an eBook format so Mobi and I read it in my Kindle aloud. So I can hear it aloud and usually in the third review there's typically not many errors mistakes.	
+12:30.6 - 12:38.3	T1CA: Usually I have very many punctuation things that... this comma goes out or and there are always some	
+12:38.9 - 12:56.6	T1CA: sentences that from the first translation until the final review are there. It's not working. It's not working. And after that I usually make an extra review from for the 20 first pages and the 20 last pages because I think that	
+12:58.2 - 12:58.8	T1CA: They are	
+12:59.9 - 13:15.8	T1CA: The most important ones, since it's the. Those are the ones that the the reader gets engaged with the with the text know first 20 so it's important that they are really fluent and I know, yeah, so that's how I work.	
+13:16.8 - 13:21.7	Interviewer: And and in this case and	
+13:24.8 - 13:26.7	Interviewer: You had an MT proposal.	
+13:27.4 - 13:27.8	And	
+13:28.9 - 13:31.9	Interviewer: What did you think of this MT proposals.	
+13:33.4 - 13:36.2	T1CA: With the MT. You mean the, the, the ones that	
+13:36.2 - 13:38.0	Interviewer: The machine translation. Yeah.	
+13:38.4 - 13:44.9	T1CA: Yeah, yeah, I usually work with no proposals because I don't really like working with	
+13:47.1 - 13:49.6	T1CA: With automatic translations.	
+13:50.0 - 13:52.0	Interviewer: With machine translation?	
+13:52.0 - 13:58.6	T1CA: Yeah, with machine translation. I don't like them because I think it's not good for the translators' brain.	
+13:59.2 - 14:01.0	T1CA: I worked for many years.	
+14:02.4 - 14:15.9	T1CA: As a reviewer for for Google, where they do... There are some translator doing machine translator and then reviewers come and check it and I realized that	
+14:17.0 - 14:20.7	T1CA: When a translators reads a lot of machine translation.	
+14:22.9 - 14:28.6	T1CA: They get used to syntactical structures that are not natural. And if you read it.	
+14:29.8 - 14:41.6	T1CA: Eight hours a day, your brain. And in the end, says, oh, the structure is natural, because I read hundred times a day. So in the end, you don't recognize what's natural and what's not natural. And what's	
+14:42.6 - 14:48.3	T1CA: So I don't think it's good to work with machine translation. I sometimes work with...when I have	
+14:49.4 - 14:55.2	T1CA: A difficult sentence and there is nothing coming up and I go to DeepL and say, oh, well, let's see what it says.	
+14:55.9 - 15:09.7	T1CA: But it's just for many... so short things or particular sentences, not for a whole text and I just go there and I think mmm I don't like that. But sometimes it gives you ideas, but not as a general rule, using machine translated	
+15:11.1 - 15:13.6	T1CA: By working with always	
+15:15.2 - 15:24.9	T1CA: I use the CAT tools in another way. It's like, I don't know, it just to have the target and and source in the same screen and the same	
+15:25.9 - 15:32.7	T1CA: Interface, the possibility to change how you translate one word. It's very easy.	
+15:34.7 - 15:35.6	T1CA: Or using I don't know	
+15:37.0 - 15:42.1	T1CA: Termbase and Termbases that I feed with the character names or things that	
+15:43.5 - 15:51.6	T1CA: I translated a novel with a lot of Russian names and it was like, oh, it's a pain. So what you just have to write an "r" and the whole name comes up.	
+15:52.9 - 15:56.2	T1CA: So yeah, working with MT translation was okay.	
+15:57.5 - 15:58.7	Interviewer: What did you think of	
+15:59.2 - 16:03.4	Interviewer: these MT proposals in particular.	
+16:07.3 - 16:09.7	Interviewer: How useful do you think they were	
+16:10.5 - 16:11.8	T1CA: The machine translation.	
+16:12.6 - 16:14.3	Interviewer: In this experiment,	
+16:15.4 - 16:19.4	T1CA: They were more more useful than usual, I would say.	
+16:21.7 - 16:33.4	T1CA: Some of them were very good avoiding some basic things. Or I don't remember exactly where but but I remember that I said, Oh, that's pretty good for being	
+16:34.5 - 16:44.3	T1CA: Something automated. So yeah, it was better, but there were also some very basic errors that seemed to be like introduced	
+16:45.8 - 16:46.9	T1CA: Specially so not	
+16:46.9 - 16:51.9	T1CA: by a machine but by a human, I will try to trick the translator here or something like that.	
+16:57.0 - 17:09.6	Interviewer: No. Maybe, maybe the little human beings in the machine. And so where would you say that the MT was difficult for you.	
+17:13.8 - 17:15.8	T1CA: That the MT. What, what, what do you mean by that.	
+17:16.3 - 17:16.9	So,	
+17:18.0 - 17:23.6	Interviewer: You started translating on your own. And then on the second part, you had	
+17:24.4 - 17:26.2	T1CA: A proposal. Yeah.	
+17:26.2 - 17:30.6	Interviewer: So you mentioned that sometimes this was useful.	
+17:31.3 - 17:37.5	Interviewer: Yeah, but I presume that sometimes it wasn't so	
+17:38.6 - 17:43.2	Interviewer: When was the MT not useful for you.	
+17:44.7 - 17:46.6	T1CA: Oh, I don't remember exactly.	
+17:47.1 - 17:49.3	T1CA: Okay, um,	
+17:50.3 - 17:51.1	T1CA: Let me think.	
+17:55.4 - 17:59.2	T1CA: You know, probably, there were some sentences, but I don't know. I can't say which ones.	
+18:00.5 - 18:08.5	T1CA: That were probably too literal and when I first read them. I might have said they are okay then.	
+18:10.0 - 18:10.5	T1CA: It was in	
+18:12.0 - 18:21.8	T1CA: Secondary review or in the... that I thought doesn't sound well. So that it tricked me into accepting them even though they were not good so	
+18:22.4 - 18:32.8	T1CA: That kind of thing. That's it. Oh yeah, what's the, why not. So maybe it's that that you end up accepting things that you wouldn't usually write or	
+18:33.8 - 18:47.9	T1CA: Because it's like when it's written it's it sounds better know if you see it sounds good but but it's not. So you have to question it yourself. Many times I think but but but I don't know exactly which ones.	
+18:48.7 - 18:49.0	T1CA: I don't know	
+18:51.4 - 18:52.0	Interviewer: You	
+18:52.4 - 19:06.3	Interviewer: Sort of touched upon this when you mentioned your experience with Google. But how do you think they use of machine translation impacts your own creativity.	
+19:07.8 - 19:10.1	T1CA: I think it improves it but	
+19:12.2 - 19:17.0	T1CA: See in this text, for instance, I remember I don't know exactly the word, but I remember that.	
+19:18.2 - 19:29.6	T1CA: The, the proposal gave me an adjective, I wouldn't have thought of. And I thought, Oh, that's good, because I that that's really good one. I don't, I don't know why I remember it was one that was very good.	
+19:31.0 - 19:39.7	T1CA: It would be probably difficult to come up with because the problem when you translate is that you have lots of words in your head on, you know them all, but	
+19:40.2 - 19:49.3	T1CA: You don't know how to reach them, no? that's the problem with it's like they are in, I don't know, in cupboards and you have to find the cupboard, but you don't know in which cupboard they are so	
+19:50.9 - 20:02.7	T1CA: So the problem is that yeah with with Machine Translation you get words that you would probably don't think of. I usually work with synonyms, with thesaurus	
+20:04.2 - 20:10.7	T1CA: with synonyms dictionaries, just to follow the thread of a word and see all the branches it has.	
+20:12.0 - 20:15.1	T1CA: But, sorry, I just, what was the question.	
+20:15.9 - 20:16.4	Interviewer: No, no.	
+20:19.3 - 20:21.4	Interviewer: No, no, it was interesting and	
+20:22.6 - 20:25.1	Interviewer: I was asking you about creativity.	
+20:27.5 - 20:30.5	T1CA: Yeah, it's I think it's good for creativity when it's not.	
+20:31.6 - 20:35.4	T1CA: When it's when it's something simple and basic	
+20:35.8 - 20:36.7	T1CA: When you need...	
+20:37.6 - 20:42.5	T1CA: So if you have a pun, probably it won't work or if you have a	
+20:43.7 - 20:51.2	T1CA: metaphor or something more complicated. You need a human there, but sometimes for very basic things.	
+20:52.4 - 21:05.2	T1CA: It works. And it also works for structures which are different in one language and the other language, but which which have direct equivalence. Oh, I don't know. It's like	
+21:06.4 - 21:09.1	T1CA: How do you say that very basic one, no?	
+21:11.6 - 21:24.8	T1CA: My name is XXX you would never say "El meu nom Ã©s XXX" You would say, "Em dic XXX". So the structure is different, but there's you know how to translate these because it's easy. So there are some expressions and some set expressions.	
+21:25.5 - 21:36.6	T1CA: That have a direct line of direct translation and sometimes you don't think of it. So to find, oh yeah, of course, we said it the other way around, or with yeah	
+21:37.3 - 21:48.8	T1CA: With prepositions. Sometimes I think that prepositions are really important in translation as the preposition is what makes that your translation sounds idiomatic and genuine or not.	
+21:50.2 - 21:59.3	T1CA: Because it's, yeah, I really try to stick to the genuine preposition wouldn't say that way. So yeah, so I think that they are	
+22:00.4 - 22:04.1	T1CA: useful for creativity, but you have to use them.	
+22:05.2 - 22:09.3	T1CA: Moderately just not to intoxicate your brain with	
+22:10.8 - 22:18.3	T1CA: Not idiomatic expressions or structures, especially specifically for yeah some tactical structures that are not natural.	
+22:19.4 - 22:30.8	Interviewer: So, you find that this intoxication that you're talking about. And so, you find that it can help your creativity but also intoxicate you.	
+22:31.4 - 22:46.2	T1CA: Yeah. Yeah. So yeah. It's both. It's both. That's why I think it's good to use Machine Translation, but not always look like. Yeah, it's good using them just to check some things, but not being all day reading machine translation.	
+22:46.8 - 22:54.6	Interviewer: So what would be your ideal if you had to design this and	
+22:57.3 - 23:01.8	Interviewer: What would you know what would you like to have	
+23:02.0 - 23:03.8	Interviewer: One. An ideal world,	
+23:04.3 - 23:07.6	T1CA: Of course, no, no, no. What, what, what I would like. I know what I would like.	
+23:08.1 - 23:10.1	T1CA: I would like a software where I would have	
+23:10.2 - 23:12.4	T1CA: The source text, the target text.	
+23:13.7 - 23:19.2	T1CA: So with no proposals just writing and when I need a proposal.	
+23:20.5 - 23:23.2	T1CA: Just like when, I don't know, when you have a concordance search	
+23:23.2 - 23:28.2	T1CA: the typical.... Yeah. In MemoQ you just press Control K and you come up with all the	
+23:28.4 - 23:36.2	T1CA: So the same way that you could press Control H and and then get a translation for a sentence you have marked	
+23:37.5 - 23:42.5	T1CA: or highlighted so that's the way I would like to use it. So not having	
+23:44.8 - 23:44.9	T1CA: A, how do you say it?	
+23:46.1 - 23:47.1	Interviewer: Predefined	
+23:47.4 - 23:54.6	T1CA: Yeah, predefined so always proposals, but only but be able to look for them very quickly.	
+23:56.3 - 24:00.0	T1CA: And have different ones just like yeah like DeepL, you know, DeepL you have	
+24:00.1 - 24:07.7	T1CA: Yes. Yeah, you have these three dots, where you can see several possibilities. So it's important thing is not that	
+24:08.2 - 24:19.1	T1CA: There is, oh yeah, the proposal is this one, but okay I give you ten proposals, I think it's better than having just one because if you have 10 proposals, you're probably having more	
+24:19.6 - 24:25.8	T1CA: It's like a bubble know every sentence and every word has like a bubble and it's like a bubble of possibilities and if you see 10	
+24:26.5 - 24:39.7	T1CA: proposals, then you probably will get closer with what you're looking for. But we can not only a matter of getting one proposal, but from getting more than one and from getting them when you need them. Okay, I need the proposal for this sentence or for this word or	
+24:40.9 - 24:41.7	T1CA: That's how I would do it	
+24:41.7 - 24:43.4	Interviewer: And what is the limit	
+24:43.4 - 24:45.5	Interviewer: To the number of proposals.	
+24:47.0 - 24:52.4	T1CA: No, I said 10 but probably 10 is too much. I would say five is OK.	
+24:53.7 - 25:04.6	T1CA: It will be depend on the sentence. There are some words that are more ambiguous and others so but yeah I think five is it would be okay.	
+25:04.8 - 25:19.7	Interviewer: And have you ever tried this dynamic or interactive translation where you start post editing and the MT proposal changes according to your changes. Have you ever used that	
+25:19.8 - 25:21.2	T1CA: No, no.	
+25:23.3 - 25:24.3	Interviewer: And	
+25:25.4 - 25:26.1	Interviewer: So,	
+25:27.6 - 25:35.3	Interviewer: Do you think if we, I wanted to ask you, you mentioned that you use DeepL sometimes	
+25:36.2 - 25:47.9	Interviewer: And so do. Can you tell me a little bit. What do you use, what tools do you use, apart from MemoQ and DeepL when you're translating	
+25:48.1 - 25:51.8	Interviewer: Do you use Google Translate or Linguee	
+25:52.9 - 25:57.3	T1CA: No, no, I just Google just use Google Translate when I find	
+25:58.6 - 26:00.5	T1CA: Sentences in other languages.	
+26:00.6 - 26:01.9	T1CA: Or something like that	
+26:02.0 - 26:23.6	T1CA: Sentences in Russian. And then I check with my Russian colleagues and I say hey hi, but just to have an idea, no I TOOLS I USE SO MANY, MANY dictionaries open in tabs in the in the browser. But now I use MemoQ in MemoQ I really use a lot this concordance search	
+26:23.7 - 26:30.7	T1CA: Here because what I find it's typical that there are words that are difficult to translate and you find it again and again. So	
+26:31.1 - 26:48.3	T1CA: Since I have all the translation memories for what have translated until today. So it's just one button pressing I can check how I have translated that difficult word that I know that 20 last times I found it. And that's great because it just always my own solution that's great	
+26:49.9 - 26:53.4	T1CA: Like talking to yourself. No. Well, sometimes you find, oh, when I began I was not very good.	
+26:55.8 - 27:00.6	T1CA: Why know what do I use. I use yeah no... dictionaries.	
+27:02.3 - 27:10.1	T1CA: DeepL sometimes MemoQ, oh I sometimes use but that's more for writing	
+27:13.0 - 27:14.0	T1CA: For Spanish	
+27:14.4 - 27:26.0	T1CA: At first, but it's sometimes helps with yeah with things I would say that, but no, let me see what programs I have here.	
+27:31.6 - 27:36.6	T1CA: I have that there's this repetition detector, but I use that more for	
+27:39.5 - 27:50.8	T1CA: writing than for translating my I should I probably should use that for translating to but and yeah and then I use the Word and the Word the Microsoft Word.	
+27:51.4 - 28:10.5	T1CA: Okay, because then I typically when I review I look for words ended in "ment". So the adverbs ending in "ly" because they are not very elegant and sometimes you don't realize and you write lots of them. And so I try to not have more	
+28:10.6 - 28:13.6	Interviewer: This translations had a lot of	
+28:16.2 - 28:20.0	Interviewer: adverbs ending in "ly" I think	
+28:21.1 - 28:30.8	Interviewer: It was almost on purpose that Vonnegut had so many because sometimes it's almost like a joke, you know,	
+28:31.3 - 28:34.4	T1CA: Yeah, but I don't know because in English, they use it more	
+28:34.4 - 28:40.6	T1CA: Than the other languages and they are not so obvious because "ment" is like, I know.	
+28:42.0 - 28:43.5	T1CA: I don't like so what I usually	
+28:44.6 - 28:46.2	T1CA: Cut off some "ment"	
+28:46.3 - 28:47.5	T1CA: Yeah, using	
+28:48.2 - 28:51.7	Interviewer: Also because some expressions require it as well.	
+28:52.0 - 28:59.5	Interviewer: But I thought in this text, there were a lot of adverbs that it was kind of like also a pun	
+29:00.2 - 29:00.5	Also ironic	
+29:02.2 - 29:03.7	T1CA: You know, yeah, yeah.	
+29:04.2 - 29:06.1	T1CA: Yeah, but even though	
+29:07.1 - 29:09.8	T1CA: I know that's one of those things that are very subjective.	
+29:10.1 - 29:12.7	Interviewer: Yeah, you need to ask Kurt Vonnegut.	
+29:13.3 - 29:24.9	T1CA: Yeah, yeah. I don't know. I don't know what I I avoid having lots of them because in English, there are sometimes I find in English text are many adverbs in "ly" and	
+29:25.0 - 29:37.1	T1CA: Yeah. And I mean, I mean it sounds elegant in English, but it wouldn't sound in Catalan. So that's, yeah. That's, yeah that's subjective, I think.	
+29:37.5 - 29:48.3	Interviewer: Yeah, so, and I wanted to ask you. All right. And I don't know if I asked you this before, not so much as a tool	
+29:49.4 - 30:00.6	Interviewer: You mentioned how you would like to use MT, but how would you like the MT solution to provide you that it doesn't provide you now.	
+30:02.4 - 30:04.0	Interviewer: The actual proposal you	
+30:04.6 - 30:08.8	Interviewer: Know what would you see what would you like to see corrected.	
+30:11.8 - 30:12.8	Interviewer: If anything,	
+30:18.1 - 30:18.7	T1CA: I'm	
+30:22.6 - 30:28.9	T1CA: It was the I saw that the the it was already corrected the the the quotes for dialogues, that's	
+30:29.0 - 30:37.1	T1CA: Okay, that's, that's good, because otherwise, you have to enter all the time, the dashes um but	
+30:38.7 - 30:48.6	T1CA: I don't know specifically because there are so many there are so many little cases. I don't know. I don't know.	
+30:49.7 - 30:56.9	Interviewer: Okay. And if, do you think there is a danger or	
+30:58.0 - 31:03.1	Interviewer: Or what are the perils of using MT to translate literature.	
+31:05.4 - 31:07.8	T1CA: Yeah. For me, it's with what I what I told you that	
+31:08.8 - 31:09.6	T1CA: in the end	
+31:11.4 - 31:12.4	T1CA: When you have	
+31:15.3 - 31:18.1	T1CA: Proposals made from machine translations.	
+31:20.3 - 31:28.4	T1CA: You, you end up accepting things that are not good enough and you end up accepting structures that are not genuine enough	
+31:30.0 - 31:46.5	T1CA: And in the end, it would sound like a translation, no? and the aim of a translation is just as it doesn't quite sound as a translation. So that, for me that's the main problem. The main danger. It's a cognitive danger. Know that you enter, no? it's like	
+31:47.9 - 31:54.2	T1CA: For instance, that the Catalan... it's like a parallel metaphor, but the Catalan in Barcelona.	
+31:54.6 - 31:58.9	T1CA: It's been it's more and more poor every day. No.	
+31:59.1 - 32:12.1	T1CA: And I see my sister who lives here and doesn't have any relationship with language and me, I don't live here, usually in Barcelona and I'm related to language and I see how her	
+32:12.7 - 32:27.2	T1CA: Catalan has been degradated now and she really speaks with Spanish structures because she's hears them every day. And it's like, oh, that's natural. That's how everybody says that and that's the same danger for machine translations.	
+32:28.3 - 32:33.6	T1CA: It does get used to them and and we shouldn't. So isn't that empover...empover...	
+32:34.2 - 32:36.4	T1CA: impoverish that's it impoverish the language.	
+32:37.4 - 32:42.6	Interviewer: And what do you think, then, is the impact on the reader of literature.	
+32:43.1 - 32:47.6	T1CA: Oh yeah, that's terrible. That's terrible, that's terrible because, for instance, there's	
+32:49.1 - 32:56.1	T1CA: Yeah what one thing that could be improved are the possesives because English uses a lot of possesives and in Catalan	
+32:57.4 - 33:05.4	T1CA: You should most of them could be or even should be because they sound really, really good translated into datives.	
+33:06.2 - 33:08.9	Interviewer: Yeah yeah well reflexive, we have reflexive verbs	
+33:09.4 - 33:13.0	T1CA: No, but I mean, but it's not really reflexive	
+33:13.4 - 33:14.5	Interviewer: Dative pronouns	
+33:15.4 - 33:15.8	See	
+33:17.4 - 33:19.0	T1CA: Her lips were shining	
+33:20.5 - 33:26.2	T1CA: You take "Els seus llavis brillaven", but you should say, "li brillaven els llavis".	
+33:28.1 - 33:45.2	T1CA: So, and that's one thing that's very genuine if you really use this kind of avoiding possessive. And I think the other day I was I was now I'm teaching a 12 year old boy to write and he sends me some texts.	
+33:46.3 - 33:57.1	T1CA: Fiction texts and he uses a lot of possesives, why does he use a lot of possesives because he has read them. Now that's the impact so that in the end.	
+33:58.1 - 34:11.2	T1CA: Translations... that are not good enough end up changing the reader and the social use of language because they get accepted just it's like the same thing that if the reader reads that said, oh, that's okay. No.	
+34:11.6 - 34:13.7	T1CA: how they are using that	
+34:13.8 - 34:17.7	T1CA: That's okay. They take it for a natural language, which is not	
+34:19.8 - 34:20.9	T1CA: That's the problem with that.	
+34:22.4 - 34:24.0	Interviewer: And and	
+34:26.1 - 34:28.1	Interviewer: And would you say	
+34:30.4 - 34:47.4	Interviewer: This is a bit em, I don't know, Would you say that using MT for language combinations that are not frequent. So for example, if you have an author in Sweden.	
+34:48.2 - 34:59.6	Interviewer: That nobody wants to translate. Do you think MT could be useful for lesser known or lesser translated language combinations	
+35:03.0 - 35:03.4	Interviewer: Can it have a function?	
+35:03.5 - 35:12.7	T1CA: I don't think so, because the other problem is that usually the machine translation works better with big languages.	
+35:14.5 - 35:15.7	T1CA: So if you use	
+35:16.6 - 35:24.5	T1CA: Spanish, English to Spanish that translation will be probably better that if you use Swedish to Catalan	
+35:26.1 - 35:33.2	T1CA: So that I think in the end the language quality will be worse with small languages and	
+35:34.7 - 35:42.1	T1CA: If an author or work that doesn't find someone to translate that wants to publish that.	
+35:43.3 - 35:46.4	T1CA: I don't think machine translation would help because that would give a	
+35:48.1 - 35:58.9	T1CA: mistaken idea of what the author and these work is. So in the end, it would be worse now. So, uh, I don't think so.	
+36:00.0 - 36:00.3	T1CA: I would	
+36:01.4 - 36:09.3	T1CA: I would probably go for which I hate... translating a Swedish from English, which is what they made from	
+36:11.8 - 36:13.3	T1CA: Scratch with you.	
+36:14.5 - 36:18.4	T1CA: Which is not good because you have just bridges and bridges of languages.	
+36:18.5 - 36:19.5	Interviewer: Yeah, relay translation.	
+36:20.6 - 36:21.2	T1CA: Yeah.	
+36:21.5 - 36:23.9	T1CA: But I would probably rely on that rather than on automatic translation.	
+36:27.9 - 36:28.5	Interviewer: Right.	
+36:29.5 - 36:35.0	Interviewer: And is there anything else that you would like to tell us	
+36:35.4 - 36:37.8	T1CA: Oh, no.	
+36:38.9 - 36:39.3	T1CA: Now,	
+36:39.3 - 36:42.7	Interviewer: About the machine translation or tools or	
+36:43.0 - 36:44.6	Interviewer: Literary translation.	
+36:45.0 - 36:45.7	Or	
+36:47.2 - 36:48.3	T1CA: I don't know.	
+36:50.0 - 36:50.5	T1CA: No.	
+36:50.9 - 36:55.0	Interviewer: Do you think publishing houses will use MT in the future.	
+36:56.3 - 36:57.0	Interviewer: Or are they using MT?	
+36:58.0 - 37:02.7	T1CA: Probably some of them. The big ones translating	
+37:04.3 - 37:05.3	T1CA: Cheap literature.	
+37:06.4 - 37:10.3	T1CA: I mean in some books. It's not very important the quality	
+37:10.8 - 37:11.8	Interviewer: Which books?	
+37:19.3 - 37:24.7	T1CA: I don't wanna say it! There are some so in literature there are some books which are	
+37:26.0 - 37:34.1	T1CA: And I know which make culture, language, bigger, and there are some books that are just entertaining.	
+37:35.4 - 37:46.2	T1CA: So like some best sellers doesn't mean that all best sellers are like this, but many of them. So I translated one woman who is bestselling and	
+37:47.2 - 38:01.6	T1CA: her use of languages terrible... lots of repetition and cliches and "he bits his lip", I donÂ´t know, this sentence of biting the lip it was like 20 times in in in in 20 pages...so, oh, no, please....	
+38:02.4 - 38:05.2	T1CA: So that you can translate with machine translation because	
+38:06.9 - 38:08.9	T1CA: There's no creativity in the in the source text.	
+38:10.0 - 38:20.0	T1CA: That would like yeah cliches know the collocations are always the same, it is a question of collocations. In the end, good literary work doesn't use any	
+38:21.5 - 38:37.3	T1CA: Usual colocation. It makes you, it twists the usual use of language and goes beyond that. So, for that machine translation doesn't make sense. But for someone who doesn't really love language, but who loves plots.	
+38:38.6 - 38:49.6	T1CA: And you can maybe use probably and I donÂ´t know, yeah, these kind of book sometimes they just split it... so okay you translate half the book and another one translates the other half book. So there's no	
+38:50.1 - 38:58.0	T1CA: style unity at all. So it doesn't matter because people who read that they don't care about that. So why should we care. Well,	
+38:59.2 - 39:05.1	T1CA: We should care. But I mean, maybe with that books or with essays, which are not so	
+39:07.6 - 39:22.3	T1CA: The language, the use of language in essays is not so emotional know in a novel the use of language is emotional, every word has some emotion hidden in it and it's important, but with essays the important thing is the meaning what's being said	
+39:24.3 - 39:30.8	T1CA: so maybe there machine translation, I guess. Yeah. And the big publishing houses. I know. Random House and all this.	
+39:31.9 - 39:38.2	T1CA: They probably they will they are wanting they're willing to to lower the translation cost.	
+39:39.8 - 39:43.0	T1CA: So maybe they will try it probably	
+39:45.6 - 39:46.2	Interviewer: Okay.	
+39:47.9 - 39:57.1	Interviewer: Did you find that in this experiment that your creativity was constrained by the use of MT.	
+40:01.1 - 40:01.7	T1CA: I donÂ´t know,	
+40:03.4 - 40:04.0	Interviewer: Or did you	
+40:04.1 - 40:08.1	T1CA: A little bit probably a little bit because even though you don't realize	
+40:08.8 - 40:09.4	T1CA: It's like	
+40:11.4 - 40:12.6	T1CA: You have to	
+40:14.8 - 40:22.0	T1CA: You don't have to make so much thinking if you have a proposal. So in the end, probably part of the creativity is	
+40:23.4 - 40:26.7	T1CA: Is lost yeah the the impression is that	
+40:28.4 - 40:36.0	T1CA: Machine translation lowers the effort. So you don't need so much effort now but	
+40:37.4 - 40:46.7	T1CA: I don't know why it would be interesting to see the first part. And the second part, if they are really the same. So when I suppose that you will	
+40:47.9 - 40:53.6	T1CA: Tell us if both are the qualities, the same or one of his better than the other.	
+40:55.1 - 41:04.2	T1CA: It would be very interesting to know us one, one thing is the subjective impression. And the other thing is the reader impression impression. So, yeah.	
+41:05.2 - 41:10.5	T1CA: I don't know, because I'm inside, so I cannot be sure about that. I don't have the distance	
+41:10.9 - 41:11.3	Yeah.	
+41:12.8 - 41:13.1	Interviewer: Yeah.	
+41:14.6 - 41:17.2	Interviewer: So if you don't have any other comments.	
+41:17.2 - 41:19.1	Interviewer: I'm going to stop the recording.	
+41:19.4 - 41:21.8	Interviewer: Okay, before I say goodbye.	
+41:28.5 - 41:29.0	Okay.	

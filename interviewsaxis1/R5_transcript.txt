@@ -1,0 +1,365 @@
+0:10.4 - 0:22.2	Interviewer: Could you give me your general views on reviewing these three texts.	
+0:23.8 - 0:27.2	Interviewer: What were the main difficulties, etc.	
+0:29.5 - 0:29.9	R5NL: Okay, it is a big question.	
+0:35.7 - 0:47.1	R5NL: Okay first thing I was trying to do was try to find out which one of the texts was machine translation and which one which ones are translated by real translators, that was not very hard.	
+0:50.9 - 0:51.4	R5NL: and	
+0:52.6 - 0:55.2	R5NL: they're all very difficult... different to review.	
+0:58.2 - 1:07.5	R5NL: The third text it's really hard to say because I just looked at the text and try to find out what type of text, it was, and then I.	
+1:08.9 - 1:09.8	R5NL: I.	
+1:11.0 - 1:18.3	R5NL: chose a chat strategy based on that, so the third text was probably a published translation or close to it.	
+1:19.6 - 1:26.8	R5NL: With only minor details that I thought could have used some tweaking the first text seem to me like.	
+1:28.6 - 1:36.8	R5NL: done by a translator who was professional translator but not a real literary translator so he made quite a few.	
+1:37.5 - 1:52.7	R5NL: Well, mistakes that would not have counted as mistakes, perhaps in a technical translation, but there are definitely mistakes in literary translation, so I concentrated on those and then did lots of but I left the details for what they were.	
+1:53.8 - 2:01.7	R5NL: And then the second text was obviously machine translation lots of work, but I did a lot of work based on the corrections in the first text.	
+2:03.0 - 2:04.7	R5NL: Does that answer your question?	
+2:05.3 - 2:11.7	Interviewer: yeah yeah you do did mention in the questionnaire that the machine that you thought.	
+2:12.8 - 2:19.6	Interviewer: Without a doubt that the second text, so text B, was machine translated.	
+2:20.0 - 2:22.6	Interviewer: But you did mention.	
+2:23.5 - 2:27.7	Interviewer: It wasn't as bad as I thought or something along those lines yeah.	
+2:28.1 - 2:28.4	R5NL: yeah.	
+2:30.1 - 2:30.4	R5NL: Yes.	
+2:31.9 - 2:34.8	Interviewer: So were you surprised by this.	
+2:35.6 - 2:37.8	R5NL: No, it was more like oh they've come a long way.	
+2:39.9 - 2:42.4	R5NL: i've tried to use every now and then I try to use.	
+2:43.7 - 2:52.8	R5NL: Well okay every now and then a few times i've tried to use a machine machine translation as a basis for my own translation, but in fact this takes up so much work.	
+2:53.7 - 3:02.3	R5NL: To do use this as a base that it's just it's faster if I do it myself actually because all of the work does not go into that first passage.	
+3:03.2 - 3:13.4	R5NL: But into the thinking of creative solutions and working working on the text, so it never really but I don't know, maybe i'm going to.	
+3:13.9 - 3:26.1	R5NL: Try and see that it's it's better I do know that if you have Google translate look for single words always very, very bad translation always but entire text is better.	
+3:26.8 - 3:33.4	Interviewer: Okay, and do you do you use Google translate or DeepL or which engine have you tried?	
+3:33.4 - 3:38.8	R5NL: No, Google Translate would have been the one because it's easily available.	
+3:39.2 - 3:47.7	R5NL: Okay i've tried it I think two times, or three times, just to take a look kind of never saved me any time I had so I just yeah.	
+3:48.5 - 3:49.7	Interviewer: So am.	
+3:52.3 - 3:58.7	Interviewer: from them translation point of view so so the source text as such.	
+4:00.5 - 4:09.7	Interviewer: Could you tell me which passages you found were more difficult for the translators?	
+4:10.3 - 4:19.3	R5NL: Yes, the song, obviously, and the intranslatable words such as drupelets and.	
+4:22.9 - 4:24.3	R5NL: Yes, and also.	
+4:25.4 - 4:30.6	R5NL: thematic things I feel like none of the texts, except from the last one.	
+4:32.4 - 4:44.0	R5NL: Had the last one, at least, tried to put some of the military themes into them into his translation by using the word "Boeray" rather than what she had on her head.	
+4:46.6 - 4:48.2	R5NL: it's also an ordinary.	
+4:49.4 - 4:58.9	R5NL: For them, the nurse is called an ordinary and that's also a military thing, so a lot of actually the whole atmosphere reminded me of Blade Runner.	
+5:00.3 - 5:11.1	R5NL: So, also with the clothes, so that this military thing I think was supposed to be in there, and none of the first the first two translations have picked up with that up.	
+5:14.6 - 5:21.5	R5NL: yeah that's that was and also another thing that I noticed in the first translations was that in.	
+5:23.0 - 5:39.2	R5NL: connections between sentences and, like the more the things that are literally translator will do will try to make the text into unity and have the person's react to each other, and that was sometimes missing, especially in the second text, of course, by the first one as well, sometimes.	
+5:39.9 - 5:41.4	Interviewer: And not in third one.	
+5:41.8 - 5:45.2	R5NL: The third node third one, was very well thought out in that.	
+5:51.5 - 6:04.2	R5NL: Lots of very natural natural dialogue people actual people actually with a personality that was consistent throughout the text actually relating to each other in a in a way that you would that was.	
+6:05.6 - 6:07.6	R5NL: In sync with the theme, also with.	
+6:09.5 - 6:11.0	R5NL: The doctor who is.	
+6:12.4 - 6:16.7	R5NL: not supposed to be for progress and the the painter, who is a bit.	
+6:18.7 - 6:22.0	R5NL: old fashioned, you could say, maybe dissidents.	
+6:26.2 - 6:27.2	R5NL: So psychologically.	
+6:28.2 - 6:47.1	Interviewer: This passages em or, rather, which passages, do you think that translators had to be more creative I don't know if it's the same you just mentioned, or more, and what is creativity in translation for you.	
+6:48.7 - 6:49.0	R5NL: Okay.	
+6:50.3 - 6:59.2	R5NL: The song, the drupelets, solving problems their creativity is solving problems actually everything that's needed creativity is.	
+7:00.1 - 7:13.4	R5NL: lateral thinking, associative thinking in order to to to just fill the gap because there's a gap there's something that you can't translate immediately it doesn't translate itself.	
+7:14.4 - 7:18.0	R5NL: Then you have a translation problem, what is needed is creativity and.	
+7:19.4 - 7:26.5	R5NL: So it's just doing what's supposed to be done, doing what's needed to make the text a whole and.	
+7:28.0 - 7:31.5	R5NL: That makes sense to the reader and also, of course.	
+7:32.7 - 7:34.7	R5NL: similar to the source text.	
+7:37.0 - 7:37.8	R5NL: Is that what you mean?	
+7:38.2 - 7:49.0	Interviewer: yeah yeah yeah Oh, and one thing that caught my attention is that the title in Dutch was not translated and it was translated in Catalan.	
+7:50.7 - 7:56.8	Interviewer: yeah So do you think there was a possibility of translation, in your opinion.	
+7:57.4 - 8:01.0	R5NL: This is always a possibility of translation, or nearly always.	
+8:04.9 - 8:11.9	R5NL: But really difficult I probably would have had to do something completely completely different, I suppose that's what they did in Catalan, we can.	
+8:12.6 - 8:21.5	R5NL: Really, imagine we we don't have in Dutch, we don't have a lot of words that sound like numbers, so you would have to find some kind of way around that.	
+8:23.0 - 8:31.7	R5NL: I think the reason is that in Dutch, a lot of people know English well enough to understand this kind of pun and when it's like that.	
+8:33.6 - 8:38.4	R5NL: yeah there's a translator has has a choice between really doing something completely different.	
+8:38.7 - 8:45.9	R5NL: And just holding on to what what it was, and I would have done the same thing as a translator, so I think it's kind of a convention that when the pun is.	
+8:46.2 - 8:53.2	R5NL: Really, complicated and easy to understand for that speaker it's actually explained a little in the translation as well.	
+8:53.8 - 8:59.1	R5NL: To be or not to be, and you can add a little bit of an explanation and have the.	
+8:59.8 - 9:10.9	R5NL: reader understand it, in that case it's maybe not worth it to completely turn the text into something else, even though this was just a bit of a gimmick and not not really central to the text so yeah.	
+9:11.9 - 9:22.5	R5NL: Okay, it just depends, if I done more work of this writer and have more of an idea of what he does and what he wants I might have actually decided to to.	
+9:24.8 - 9:30.0	R5NL: To solve it another way just depending on what his strategies are and how important pieces.	
+9:32.5 - 9:35.8	Interviewer: Are you satisfied with the review that you did?	
+9:38.0 - 9:45.8	Interviewer: Given the constraints and mean are you satisfied, do you think these texts, and with these corrections are.	
+9:48.6 - 9:50.4	Interviewer: up to standard in a way.	
+9:53.3 - 9:54.4	R5NL: It depends really.	
+9:56.5 - 9:59.6	R5NL: At first I had a problem with the.	
+10:01.4 - 10:01.7	R5NL: Okay.	
+10:04.0 - 10:11.7	R5NL: You told me to, or you get it said so, to correct mistakes and correcting mistakes, is not enough to turn.	
+10:12.4 - 10:29.5	R5NL: And a non unfinished translation into a publishable translation, so I did a little bit more than that, but because everything was at sentence level and had to be explained mistake by mistake, I could not really turn it into something else.	
+10:30.1 - 10:31.4	Interviewer: That I couldn't understand.	
+10:31.6 - 10:48.5	R5NL: That I could stand behind as a translator so the third text I would definitely have it published writer, I think it was actually published already there was only one wayone thing that I couldn't agree with the translation of drupelet, but everything else we're really minor details and.	
+10:50.4 - 10:55.1	R5NL: yeah, so I think within the restrains of.	
+10:57.0 - 10:57.7	R5NL: The task.	
+10:59.4 - 11:09.2	R5NL: it's it was Okay, but i'm not sure it would be really well, it would be publishable perhaps, but not the best translation not up to my own standards.	
+11:11.2 - 11:12.3	R5NL: And the second yeah.	
+11:12.9 - 11:15.1	Interviewer: yeah maybe you need another review.	
+11:15.5 - 11:20.8	Interviewer: After a think implementing all the corrections when you need to read it again.	
+11:21.4 - 11:41.4	R5NL: No, I I think I would do a lot of things differently and I didn't pay any attention to the theme, for instance yeah I would just change the whole thing probably again it's not bad as it is this is how I would review my students and it's obvious their translation, they have to learn and.	
+11:42.5 - 11:58.7	R5NL: it's not not up to me to completely tell them this is how it's done because that that's yeah that's of no use to them, I want them to learn with them to become a good translator themselves and the way that they would become a good translator not turned into me, all of a sudden, but.	
+11:58.9 - 12:03.7	R5NL: So the first review would become a translation without personality.	
+12:05.8 - 12:06.0	R5NL: The.	
+12:07.0 - 12:07.6	R5NL: Is that Scientific?	
+12:09.1 - 12:13.5	Interviewer: I know so from these three texts and.	
+12:15.2 - 12:18.6	Interviewer: Could you tell me it's obvious that you prefer text C.	
+12:19.7 - 12:24.5	Interviewer: That you thought B was machine translation, what about A?	
+12:27.3 - 12:27.7	R5NL: yeah.	
+12:29.3 - 12:44.1	R5NL: I think it might be post-edited because it looked a lot a lot like text to be by human translator, obviously, and I think someone who is not a literary translator but a professional translator but not a literary translator.	
+12:45.5 - 12:47.7	Interviewer: So i'm going to.	
+12:50.6 - 12:51.8	R5NL: When do I get to know if i'm right?	
+12:54.3 - 12:55.6	Interviewer: So ...	
+12:58.8 - 13:08.1	Interviewer: text B was machine translation and text A was pos-edited and text C was human translation, without any.	
+13:08.6 - 13:30.1	Interviewer: But the only thing that maybe, and this is what i'm going to ask you within these texts, did you notice any change within the text so was there any change in text A or in text C when you were reading.	
+13:31.4 - 13:35.1	R5NL: You mean parts of the text would have been done by someone else.	
+13:36.0 - 13:40.9	Interviewer: So then these texts were split into two people.	
+13:41.1 - 13:44.5	Interviewer: So actually the same people translated both.	
+13:44.7 - 13:46.3	Interviewer: Really yeah.	
+13:48.3 - 13:49.6	Interviewer: Did you notice that?	
+13:49.8 - 13:50.9	Interviewer: the text was split?	
+13:51.6 - 13:54.8	R5NL: Hold on the same people translated text A and text C.	
+13:56.1 - 13:58.4	R5NL: Okay, and they corrected each other.	
+13:58.8 - 13:59.3	Interviewer: No.	
+14:03.8 - 14:04.3	Interviewer: So.	
+14:04.6 - 14:06.1	R5NL: What was the split about?	
+14:06.2 - 14:07.6	Interviewer: Okay, so I tell you.	
+14:08.0 - 14:08.6	R5NL: Okay, so.	
+14:10.5 - 14:19.4	R5NL: Text A was just half was person A, text C the second half was person C haha that's interesting, so... part of the dialogue.	
+14:21.2 - 14:22.6	Interviewer: So, for example.	
+14:22.8 - 14:28.6	Interviewer: yeah text A translator one started the first part.	
+14:28.8 - 14:30.4	Interviewer: post-editing.	
+14:31.4 - 14:31.6	R5NL: yeah.	
+14:31.8 - 14:35.3	Interviewer: And translator two started the second part post-editing.	
+14:35.4 - 14:42.2	Interviewer: But the first part of translating two was C.	
+14:43.2 - 14:44.6	Interviewer: Okay, this so.	
+14:44.8 - 14:49.4	Interviewer: Both translated one text but accross.	
+14:49.6 - 14:49.8	R5NL: yeah.	
+14:50.9 - 14:55.3	Interviewer: So we have an example of the same translators.	
+14:55.5 - 14:57.3	Interviewer: In different modalities.	
+14:57.3 - 14:57.7	R5NL: Oh, interesting.	
+14:58.4 - 14:58.9	Interviewer: So.	
+14:58.9 - 15:00.8	Interviewer: What we wanted to see.	
+15:00.9 - 15:01.8	R5NL: Very interesting.	
+15:03.4 - 15:05.6	Interviewer: Well, we wanted to see was.	
+15:06.2 - 15:10.0	Interviewer: How how machine translation .	
+15:10.0 - 15:13.4	Interviewer: affects the translation.	
+15:13.5 - 15:14.6	Interviewer: Yes, not a chance.	
+15:15.1 - 15:21.3	Interviewer: Because otherwise you might like one translation better than the other one just because it's a different translator.	
+15:21.4 - 15:22.5	R5NL: yeah these are.	
+15:23.6 - 15:27.1	R5NL: Okay wow that's really interesting it's funny because.	
+15:28.4 - 15:28.7	R5NL: The.	
+15:28.7 - 15:29.4	Interviewer: Did you notice anything?	
+15:30.1 - 15:33.0	R5NL: I didn't notice, not at all, not in the least.	
+15:34.4 - 15:41.0	R5NL: I actually thought I had this idea of the the translator of text C as an older person because...	
+15:42.8 - 15:45.4	R5NL: Because he or she.	
+15:48.4 - 15:56.0	R5NL: seems to avoid lots of English constructions in any way that people even my age don't do anymore.	
+15:57.1 - 15:57.7	R5NL: Maybe my.	
+15:57.7 - 16:00.2	Interviewer: So the translator.	
+16:00.2 - 16:00.8	R5NL: You have look.	
+16:01.4 - 16:05.3	Interviewer: Both translators one was older than the other.	
+16:05.6 - 16:08.1	Interviewer: yeah so one would be older than you.	
+16:08.3 - 16:12.2	Interviewer: yeah and the other one probably either your age or younger.	
+16:12.3 - 16:12.6	R5NL:yeah.	
+16:14.2 - 16:17.2	Interviewer: A, but I think here the key.	
+16:17.5 - 16:19.4	Interviewer: Is who started the text.	
+16:20.8 - 16:21.6	R5NL: Is what sorry.	
+16:22.0 - 16:23.3	Interviewer: who started with.	
+16:23.4 - 16:24.2	R5NL: Oh yes.	
+16:24.7 - 16:29.3	Interviewer: Because, maybe for the reviewer the first half is more important than the second.	
+16:29.7 - 16:31.1	Interviewer: Yes, for a first impression.	
+16:31.6 - 16:35.1	R5NL: that's very, very possible i'm going to take a look, where all the.	
+16:35.1 - 16:36.1	R5NL: Dialogue is.	
+16:36.9 - 16:38.8	Interviewer: yeah the dialogue is everywhere.	
+16:39.5 - 16:39.8	R5NL: yeah.	
+16:40.8 - 16:41.2	R5NL: Yes.	
+16:42.9 - 16:43.4	Interviewer: and	
+16:43.5 - 16:47.3	Interviewer: So for text C, which is the one that you liked.	
+16:47.9 - 16:53.0	Interviewer: yeah the first part was translated by the person, that is your age or younger.	
+16:53.2 - 16:58.9	R5NL: yeah I think the second part was best actually looking at it or yeah.	
+17:00.3 - 17:00.7	R5NL: and	
+17:02.2 - 17:04.6	R5NL: The dialogue was also, I think I mentioned this.	
+17:06.4 - 17:06.8	R5NL: A bit.	
+17:07.9 - 17:09.7	R5NL: More colloquial than the English.	
+17:12.0 - 17:15.2	Interviewer: In the first part of text C or throughout?	
+17:15.8 - 17:18.3	R5NL: I think, in the second part actually.	
+17:19.4 - 17:22.2	R5NL: hold on yes, the second part.....	
+17:23.3 - 17:28.4	R5NL: Yes, and the second part there's more dialogue in the second part, so that's what I based my idea and I think.	
+17:30.3 - 17:33.5	R5NL: yeah so it's nice when we're proceeding as I can tell me.	
+17:38.4 - 17:47.3	R5NL: But it's a good translation, and I also translate together with colleagues and you're supposed to do it this way, but they didn't.	
+17:47.3 - 17:49.4	R5NL: Look at each other, no wow that's.	
+17:49.4 - 17:51.6	Interviewer: No, but the interesting thing then.	
+17:52.0 - 17:55.9	Interviewer: From what you are saying is that these same translators.	
+17:56.1 - 17:56.8	Interviewer: With this.	
+17:57.4 - 18:01.0	Interviewer: Proposal yeah did much worse.	
+18:01.1 - 18:01.5	R5NL: Yes.	
+18:03.0 - 18:09.4	Interviewer: yeah because at least they were supposed to be coherent with themselves yeah and they weren't right.	
+18:09.7 - 18:10.9	Interviewer: Because they were much better.	
+18:10.9 - 18:13.6	R5NL: Initially, when I was reading translation C.	
+18:14.3 - 18:22.1	R5NL: I was thinking oh i've done so bad correcting translation A because look at all these wonderful solutions that are so different from.	
+18:23.0 - 18:32.0	R5NL: What I changes in translation A I didn't change it back because I thought I corrected and what I what I corrected is better now than it was.	
+18:32.3 - 18:44.9	R5NL: But look at what I should have thought I should have thought of I think that's what you were looking for right yeah yeah it's true it really limits the creativity puts a limit on creativity.	
+18:45.4 - 18:47.5	Interviewer: Why, why do you think this is.	
+18:49.1 - 18:51.5	R5NL: Well, obviously, because you already have.	
+18:52.9 - 19:01.5	R5NL: A solution in front of you, and maybe it's not the right one, but you're not about to turn the whole sentence around to look for something new, you just have this small.	
+19:02.8 - 19:11.6	R5NL: This limited thing that you have to change, so you change your limited thing instead of broadening your view and trying to.	
+19:12.0 - 19:25.0	R5NL: Come up with something completely different it's not necessary, the rest of the sentence is already there I think that's the reason why there's more influences from English as well in text A because you don't notice a lot of my students sometimes say.	
+19:26.9 - 19:28.0	R5NL: They have to learn that.	
+19:30.2 - 19:39.4	R5NL: If something sounds right, sometimes it sounds right because it sounds right in English and they're not really yeah they have to they have to learn.	
+19:40.3 - 19:50.2	R5NL: That it's not supposed to you have to make this this strict division between two languages in your head and the strict division is not there in your head in your head and.	
+19:50.6 - 20:01.7	R5NL: Also, everything sort of melds together or you don't have a very strict division of course there is some but it's it's more economical for.	
+20:02.8 - 20:07.9	R5NL: With one head to to sort of use things from another language as well.	
+20:08.4 - 20:23.5	R5NL: And when you're translating you're in the middle of that so you always all you have to do all the time is thinker know this is English, this is English or this is influenced by the source text and whether it's English or just word by word translation yeah.	
+20:24.7 - 20:27.2	R5NL: Anyway, this can confirm.	
+20:29.6 - 20:45.7	Interviewer: In this theme, what do you think the impact would be on people reading these three texts, so what would the reading experience be in your opinion of text A, B and C.	
+20:48.6 - 20:52.6	R5NL: Yeah, text A or B and well B definitely it's kind of absurd.	
+20:54.7 - 21:05.9	R5NL: Absurd reading experience and text A I don't think the reader would enjoy that because there's so many inconsistencies and the Dutch is not really Dutch it's an in between Dutch.	
+21:07.3 - 21:09.8	Interviewer: What do you mean by inconsistencies?	
+21:10.6 - 21:23.0	R5NL: The properties of the painter and and the doctor well, especially the painter the things that the writer put in there to make consistent worldview for the painter.	
+21:23.7 - 21:26.1	R5NL: Okay, and they're gone.	
+21:26.8 - 21:36.6	R5NL: So some of the things that are some of the major mistakes I indicated and they're really major they're not supposed to be there you don't understand the story, if you really like that and there's.	
+21:36.8 - 21:46.9	R5NL: All these things that don't clash with the view of with the the world of a story you're in and and you know, in the future and the world is like this and.	
+21:50.0 - 21:54.9	R5NL: it's supposed to be consistent that's what the writer is really trying to do.	
+21:56.9 - 22:00.9	R5NL: The third story had that apart of the drupelet it also had.	
+22:01.0 - 22:01.4	R5NL: This.	
+22:02.8 - 22:11.0	R5NL: Well isn't that bad, but the scientists in the end, when scientists stepped in yeah and they the song.	
+22:11.7 - 22:15.8	R5NL: Yes, the doctor, all of a sudden was on the wrong side of the argument.	
+22:16.6 - 22:24.6	R5NL: yeah okay that's that's one of those things it's not supposed to be there, I can imagine you would make a mistake, like that, as a translator but.	
+22:26.6 - 22:30.3	R5NL: These are bad mistakes, is it yeah they changed the story.	
+22:31.1 - 22:33.8	Interviewer: But do you think they would enjoy text C?	
+22:34.9 - 22:37.4	R5NL: Text C they would enjoy Yes, this is only.	
+22:38.6 - 22:46.0	R5NL: Just a small glitch you will you could call you could say because that's it's, I think, from the rest of the text it's clear that.	
+22:49.1 - 22:53.6	Interviewer: If you could, if you had a magic wand.	
+22:54.7 - 23:11.1	Interviewer: And a literary translator somebody from technology asked you how would you like machine translation to be or how would you like technology to help you, what do you envisage?	
+23:15.8 - 23:19.6	R5NL: I do use technology quite a bit especially.	
+23:20.6 - 23:23.7	Interviewer: On what do you use?	
+23:25.6 - 23:26.8	R5NL: I use Synonyms, online dictionaries.	
+23:28.4 - 23:29.1	R5NL: I use corpuses.	
+23:29.9 - 23:31.6	Interviewer: Like Linguee or?	
+23:32.4 - 23:47.2	R5NL: Yes, I use Linguee, well, I also use the DBNL.ORG, which is the library with all a lot of earlier Dutch work I use that as a corpus if i'm not sure about an idiom or so.	
+23:49.7 - 23:53.9	R5NL: I would really loved his the Sketch engine.	
+23:55.4 - 24:11.2	R5NL: Well, not just the program sketch engine, but right now, some people are putting translations into that, so I would love to use that as well as a search engine to look up how certain yeah who has used one as a solution for certain.	
+24:12.7 - 24:13.1	R5NL: problems.	
+24:16.2 - 24:18.8	R5NL: Yes, things in that direction, I would really welcome.	
+24:19.8 - 24:20.3	R5NL: Corpora.	
+24:20.6 - 24:27.1	Interviewer: So also all these integrated into some kind of tool for you or how, how do you.	
+24:27.2 - 24:28.0	Interviewer: Because Sketch is there...	
+24:29.2 - 24:31.5	Interviewer: And all of this is there yeah.	
+24:31.5 - 24:40.5	R5NL: Sketch engine I don't use, I would like to use it, but it's not available to me, but everything else comes off the Internet so yeah.	
+24:42.8 - 24:52.9	Interviewer: And would you like any kind of proposal from a machine in some kind of form separate proposal something from machine translation.	
+24:54.5 - 24:57.7	R5NL: Oh, you mean from artificial intelligence machine translation.	
+24:59.4 - 24:59.7	R5NL: yeah.	
+25:02.2 - 25:04.7	R5NL: Linguee is based on human translations.	
+25:04.8 - 25:11.8	R5NL: Yes, and when whenever it's based on human translations, yes or based on the dictionary, but the data is there and I can use.	
+25:11.8 - 25:15.3	Interviewer: Well machine translation is based on human translation to.	
+25:16.2 - 25:17.0	Interviewer: That, but then.	
+25:17.3 - 25:18.9	Interviewer: It comes up with your.	
+25:19.0 - 25:21.8	Interviewer: yeah with a new one.	
+25:22.0 - 25:27.7	R5NL: yeah yeah The context is different with Linguee, the context, at least, is correct, so.	
+25:28.2 - 25:28.5	Interviewer: yeah.	
+25:28.9 - 25:31.4	Interviewer: Some kind of contextual tool.	
+25:31.7 - 25:50.8	R5NL: Yes, that would be yeah I think that's yes that's what i'm using right now well corpora I want to know what the connotations are, and then I want to know what what they are like in human in the human world not based on yeah I do have I do you think artificial intelligence is interesting.	
+25:52.4 - 25:59.8	R5NL: extremely interesting, but it doesn't just some some things are missing that are really crucial to literary translation.	
+26:00.9 - 26:03.3	R5NL: such as knowledge of the real world and.	
+26:05.6 - 26:11.2	R5NL: connotations yeah knowledge of the real world as well, living in the real world.	
+26:13.2 - 26:16.0	R5NL: knowing what idiom is and why we use it, etc.	
+26:16.3 - 26:17.1	Interviewer: That world.	
+26:17.6 - 26:19.3	Interviewer: That's the thing.	
+26:22.2 - 26:28.2	Interviewer: And is there anything else, that you would like to comment about the review or or about.	
+26:29.6 - 26:39.4	Interviewer: Your experience a literary translator or even the use of machine translation whatever opinion you want to share with us will be valuable.	
+26:39.8 - 26:46.7	R5NL: yeah I think the most The thing that struck me most about those three translations is that.	
+26:48.2 - 27:03.2	R5NL: separate from your researcher, I think, but the third in the third translation, there was a translator who took responsibility for the text and saw as a whole and just all of his actions or her actions were based on.	
+27:05.7 - 27:14.2	R5NL: The text as a whole, and what what would be good for the text then like that, but if you tell it to translate correct mistakes as you did with me.	
+27:15.2 - 27:31.2	R5NL: it's not your text you're not going to feel, and if you do if you do feel responsible you're going to correct more mistakes and the more that you feel that it's it's up to you to turn it into a good text, the more you're going to.	
+27:32.7 - 27:33.3	R5NL: Change.	
+27:35.2 - 27:56.3	Interviewer: it's funny because I asked the translators that when they were post-editing that the quality had to be publishable quality, so we had to be top quality not only correct the bad things, but you know to do, and I also asked them if they were satisfied with their translation.	
+27:57.6 - 27:59.8	Interviewer: And they say they were.	
+28:01.1 - 28:02.4	Interviewer: But it is.	
+28:03.9 - 28:06.0	Interviewer: apparent from the corrections.	
+28:07.2 - 28:14.9	Interviewer: That this sense, maybe that you're saying of responsibility is a bit distorted in post-editing.	
+28:15.5 - 28:20.8	R5NL: yeah yeah yeah put it like I didn't do the translation first or the other thing.	
+28:21.8 - 28:25.5	Interviewer: Well, one translator because he was the same text.	
+28:26.7 - 28:30.1	Interviewer: One translator It started with the.	
+28:31.2 - 28:33.9	Interviewer: With a human and then did the post-editing.	
+28:34.4 - 28:38.8	Interviewer: And the other translator started with the post-editing and then did the human.	
+28:40.4 - 28:42.4	R5NL: Okay, of course, yeah yeah.	
+28:43.8 - 28:49.2	Interviewer: No, I could have asked them to do ah, no because I needed to cross yeah yeah.	
+28:50.8 - 28:56.4	Interviewer: And it's this results are are interesting.	
+29:00.1 - 29:03.9	Interviewer: Because they also the same thing is happening with the Catalan.	
+29:04.7 - 29:09.0	Interviewer: Okay, so, so this is the same across the board yeah.	
+29:09.6 - 29:11.6	Interviewer: This is what is and.	
+29:11.7 - 29:12.4	R5NL: How many.	
+29:13.5 - 29:16.0	R5NL: People like me that you have for Dutch.	
+29:17.1 - 29:27.4	Interviewer: So this is my last question, maybe that I can ask you we had three people for Dutch yeah and three people for Catalan the reviewers.	
+29:27.8 - 29:46.9	Interviewer: yeah but one of the reviewers for Dutch mentioned to me that the quality of the three texts was very, very poor and that none of these texts could be publishable and that they require a lot of changes ...	
+29:49.6 - 30:00.3	Interviewer: She wrote a whole paragraph on the poor quality and that nobody could read these text but it's not exactly what the other two reviewers.	
+30:00.6 - 30:03.8	Interviewer: One of them is you are saying about text C.	
+30:04.0 - 30:05.1	R5NL: Outlier that's know.	
+30:06.4 - 30:12.2	Interviewer: So right, yes, so what is your impression of this feedback.	
+30:14.6 - 30:24.2	R5NL: I don't know I teach so and I I teach a lot of translation comparisons so translation next to the source text so.	
+30:25.7 - 30:34.8	R5NL: A lot of different books all kinds of books good bad everything I tell my students to come up with interesting translations, so the non interesting translations I.	
+30:35.7 - 30:45.2	R5NL: don't do but anything that's good or bad have some, and so I know what a good translation looks like and I know that even the best translators make mistakes.	
+30:45.8 - 30:57.6	R5NL: And that a lot of translations are published with small glitches things that are not perfect, etc, but are still good done by good translators, with perhaps bad editing.	
+30:59.6 - 31:02.0	R5NL: Especially these days when there are no editors anymore.	
+31:02.3 - 31:14.2	R5NL: And it's really impossible to just translate without somebody who looks at your text and give give feedback in some way, so I think yeah actually thought it was published so that's how good a job they did.	
+31:15.5 - 31:19.8	Interviewer: Exactly you, you did mention that so and.	
+31:19.8 - 31:20.6	Interviewer: So, but again...	
+31:20.6 - 31:22.1	R5NL: I think you had an outlier.	
+31:22.5 - 31:29.8	Interviewer: yeah well it to show you that translation and especially when doing research.	
+31:31.6 - 31:32.9	Interviewer: Sometimes...	
+31:35.6 - 31:53.2	Interviewer: Outsiders and sometimes researchers and refer to translation as a unity, so they say the translation, the review, but the reality is, this is not an uniform homogeneous opinion yeah.	
+31:54.8 - 32:13.8	Interviewer: And one of the interesting parts for me as a researcher is to find out what are the things that are different and and are pleasant to us as readers what is it in a text that is pleasant.	
+32:15.0 - 32:17.8	Interviewer: Which is not easy to.	
+32:19.4 - 32:29.8	Interviewer: To to determine and and and it's the as for the readers to say right yeah the reviewers have a role and then the readers.	
+32:31.0 - 32:32.0	Interviewer: So anyway.	
+32:33.8 - 32:34.0	yeah.	
+32:35.0 - 32:39.8	Interviewer: Next time, and we look at more things from the reading maybe.	
+32:41.5 - 32:46.6	R5NL: yeah yeah it's difficult it's really difficult I tried to think about categories.	
+32:47.8 - 32:48.7	R5NL: And it's really difficult.	
+32:50.1 - 32:50.6	R5NL: kind of.	
+32:50.9 - 32:54.5	Interviewer: You mentioned about the categories in the creative shifts.	
+32:54.6 - 32:54.8	R5NL: yeah.	
+32:55.9 - 32:58.3	Interviewer: That you had some.	
+33:00.1 - 33:03.3	Interviewer: A that you use different ones.	
+33:04.8 - 33:20.2	R5NL: Official categories I I come up with comments and then based on the comments, sometimes I will write them down and keep a list of types of comments but I don't always use that list yeah, I think, in this case.	
+33:23.4 - 33:30.4	R5NL: it's it's not four categories, it will be more like a first you look is idiomatic or not, is it idiom or is it not.	
+33:30.8 - 33:46.3	R5NL: And if it's idiomatic is the is the source text isn't about idiomatic as well, and if it's not idiomatic is the source text or also not idiomatic and then you have to go on these are things that are easy to do when you're a person with a brain.	
+33:49.2 - 33:55.4	R5NL: Yes, and you can classify but it's going to be very complicated, you can definitely classify but it's going to be this huge.	
+33:57.6 - 34:00.3	R5NL: it's called yes, no diagram.	
+34:01.6 - 34:14.3	R5NL: So if it's not idiomatic you have to think is it on purpose not idiomatic or is it a mistake in the source text, if it is not on purpose not idiomatic Is it because its aesthetic aesthetically.	
+34:14.8 - 34:23.4	R5NL: pleasing or because the the writer wants to give you a hint that there's something going on thematically etc.	
+34:23.9 - 34:38.1	R5NL: So all of these things that you, you as an experienced translator you do also automatically you can I tried to explain to my students have to explain you you'd have to look at this and that so you can explain them but it's this huge blown up thing, because when.	
+34:39.5 - 34:45.6	R5NL: there's like 100 reasons why something is not idiomatic and why you have to take and.	
+34:47.0 - 34:52.8	R5NL: You have to try to replicate it in Dutch and why  it's not possible or because conventions tell you.	
+34:53.9 - 35:10.1	R5NL: yeah you can't make grammatical mistake etc so conventions, can be a reason why you don't take over something that's not idiomatic or it doesn't work in Dutch, or when you do try to do the same thing it's it's going to be.	
+35:12.0 - 35:17.0	R5NL: Too strange for the Dutch reader or more strange than the original etc okay.	
+35:18.1 - 35:30.6	R5NL: And, but it's it's kind of a first thing that you do is look as it is look at does it strike the eye in some way? that's what is something that the reader does, too, that's why I ask my students to do as well.	
+35:31.4 - 35:39.0	R5NL: Does it is something going on there, and why is it because it's not as idiomatic and why isn't not idiomatic.	
+35:40.4 - 35:40.7	R5NL: Did.	
+35:42.5 - 35:50.0	R5NL: that the positive to do something there, and after you look at the idiom or something else, I think I wrote it down.	
+36:01.5 - 36:02.0	R5NL: hold on.	
+36:10.5 - 36:10.8	R5NL: Okay, sorry.	
+36:12.8 - 36:13.5	Interviewer: No problem.	
+36:14.5 - 36:16.5	Interviewer: What I wanted to ask you is that, by.	
+36:17.0 - 36:18.5	Interviewer: doing the creative shifts.	
+36:20.1 - 36:23.5	Interviewer: Was that, in your view.	
+36:24.8 - 36:30.9	Interviewer: Something that made you reflect about the translation or.	
+36:32.0 - 36:35.6	Interviewer: Did you have this impression that it was a bit artificial.	
+36:37.1 - 36:39.6	R5NL: It did seem a bit artificial sorry.	
+36:44.1 - 36:44.8	R5NL: A technical problem.	
+36:45.1 - 36:45.8	Interviewer: Yes, okay.	
+36:48.5 - 36:57.1	R5NL: I did feel like a lot of things fall into the same category, both in the first and then the second task.	
+37:00.2 - 37:03.6	R5NL: yeah non idiomatic because that's where I look at very often.	
+37:05.2 - 37:05.8	R5NL: and	
+37:07.6 - 37:11.8	R5NL: Yes, and it wasn't perfect, it was workable.	
+37:12.6 - 37:15.3	Interviewer: Okay yeah how would you do it?	
+37:15.7 - 37:17.0	R5NL: yeah that's what I was trying to say.	
+37:20.8 - 37:21.3	R5NL: Sorry.	
+37:23.6 - 37:25.8	R5NL: If I find it i'm going to send it to.	
+37:25.8 - 37:29.9	R5NL: me it's like you look at idioms and then you look at something else but i've got what it is.	
+37:31.0 - 37:31.7	Interviewer: We can.	
+37:31.9 - 37:32.6	Interviewer: We can.	
+37:34.6 - 37:38.1	Interviewer: Set up something to do in common.	
+37:39.7 - 37:40.0	R5NL: oh Really?	
+37:42.5 - 37:53.2	R5NL: yeah okay so i'm not a scientist right now i'm a teacher at the university but i'm not a scientist, but i've been asked to write a PhD.	
+37:54.4 - 37:55.3	Interviewer: huh yeah.	
+37:55.4 - 38:00.6	R5NL: So I have to think about what I want to do... categores are very interesting I have to admit.	
+38:01.0 - 38:01.8	R5NL: yeah.	
+38:01.9 - 38:04.5	Interviewer: So you have to do the PhD.	
+38:04.6 - 38:04.9	R5NL: yep.	
+38:07.0 - 38:13.3	R5NL: yep as a PhD student i'm definitely not... and the thing is.	
+38:15.1 - 38:29.4	R5NL: My health is not 100% and I do have problems just doing things that i'm doing right now so i'm not exactly looking forward to taking up this huge amounts of work than a PhD is so.	
+38:31.2 - 38:40.0	R5NL: yeah i'm trying i'm working on my health is going to have to but it's it's good to have to wait for them until I feel better yeah so right now.	
+38:41.2 - 38:41.4	R5NL: But.	
+38:42.3 - 38:48.1	Interviewer: yeah maybe I stop the recording now and we can discuss this off the record.	
+38:49.1 - 38:50.0	Interviewer: Right yeah.	
+38:51.3 - 38:51.9	I just.	
