@@ -1,0 +1,1569 @@
+---
+title: "CREAMT - Axis 2 Reception"
+author: "Ana Guerberof Arenas & Antonio Toral"
+date: "Generated on: `r date()`"
+output:
+  html_document:
+    code_folding: show
+    number_sections: yes
+    toc: yes
+    toc_float:
+      collapsed: no
+      smooth_scroll: yes
+---
+
+# Load Libraries and Data
+```{r}
+library(ggplot2)
+library(tidyverse)
+library(viridis)
+library(hrbrthemes)
+library(effsize) # for effect size of wilcox test
+library(car) # leveneTest
+library("ggpubr")
+library(psych)
+library(ltm)
+library(lme4)
+library(FSA)
+library(DescTools)
+library(broom)
+library(emmeans)
+library(rstatix)
+library(carData)
+library(car)
+library(RcmdrMisc)
+library(conover.test)
+
+# Load the entire database that includes CA and NL (including condition D, English)
+dfall <- read.csv("ReadingXperience - anonymised.csv")
+```
+
+# Preprocess Data
+
+```{r}
+# Exclude condition D (English) so we have one database with CA and NL and same conditions
+df <- dfall[dfall$Condition != "READINGD", ]
+
+# Responses according to language of questionnaire CA or NL
+table(dfall$UserLanguage) # 103 CA and 120 NL in total
+table(df$UserLanguage) # 103 CA and 90 NL
+
+# split languages
+AllNL <- dfall[dfall$UserLanguage == "NL",]
+CA <- df[df$UserLanguage == "CA",]
+NL <- df[df$UserLanguage == "NL",] # without English.
+
+# Reading conditions are A = PE, B = MT, C = HT, D = ST
+table(df$Condition) # show number of responses per condition
+table(df$Condition, df$UserLanguage) # show number of responses per condition and per language
+table(dfall$Condition, dfall$UserLanguage) # CA has 0 in condition D because no English text was shown to participants.
+```
+
+# Demographics and general questions
+
+## Where did you hear about the study?
+
+```{r}
+# Question 1.3.bis contains a table with responses from participants to the question Where did you hear about this study?
+
+table(dfall$Q1.3.bis)
+table(dfall$Q1.3.bis, dfall$UserLanguage)
+round(100*prop.table(table(dfall$Q1.3.bis, dfall$UserLanguage), 2), 2)
+round(100*prop.table(table(dfall$Q1.3.bis),), 2)
+
+# We plot the data to see the distribution of participants per language and provenance
+ggplot(dfall, aes(x = Q1.3.bis, fill = UserLanguage)) + 
+  geom_bar(stat="count", )+
+    geom_text(
+    stat = "count",
+    aes(label = ..count..), position=position_stack(vjust=0.3), size = 3, color = "white"
+  ) +
+  scale_x_discrete(labels=c("FB", "Goodreads", "Hebban", "Private", "Club", "SM", "Uni", "Writers", "N/R")) +
+  xlab("Sites") + 
+  ylab("Number of participants")+
+  scale_fill_grey()
+```
+
+## Gender
+```{r}
+# gender 1 = female, 2 = male, 3 = non-binary, 4 = prefer not to say
+
+#Tables according to gender
+dfall$gender <- as.factor(dfall$Q1.1);
+  levels(dfall$gender) <- c("Female","Male","Non-binary", "Prefer not to say")
+  table(dfall$gender)
+  table(dfall$gender, dfall$UserLanguage)
+  
+# To see the proportion of women in each language we run a prop.table and add total margins
+  prop.table(table(dfall$gender, dfall$UserLanguage),2)
+  addmargins(round(100*prop.table(table(dfall$gender, dfall$UserLanguage),2), digits = 0))
+```
+
+## Age
+```{r}
+# age 2 = 18-24, 3= 25-34,  4= 35-44, 5 = 45-54, 6 = 55-64, 7= 65-74, 8= 75-84, 9= 85 or older
+df$Q1.2 <- factor(df$Q1.2)
+table(df$Q1.2)
+table(df$Q1.2, df$UserLanguage)
+table(dfall$Q1.2)
+table(dfall$Q1.2, dfall$UserLanguage)
+
+# Categories of age 1 = 18-34; 2 = 35-54; 3 = 55-74; 4 = 75 or older  # Less coarse age ranges
+dfall$agegrp <- NULL
+dfall$agegrp[dfall$Q1.2== 2 | dfall$Q1.2==3] <- 1
+dfall$agegrp[dfall$Q1.2== 4 | dfall$Q1.2==5 ] <- 2
+dfall$agegrp[dfall$Q1.2== 6 | dfall$Q1.2==7 ] <- 3
+dfall$agegrp[dfall$Q1.2== 8 | dfall$Q1.2==9 ] <- 4
+dfall$agegrp <- as.factor(dfall$agegrp)
+table(dfall$agegrp)
+table(dfall$agegrp, dfall$UserLanguage)
+
+levels(dfall$agegrp) <- c("18-34","35-54","55-74", "75+")
+table(dfall$agegrp)
+table(dfall$agegrp, dfall$UserLanguage)
+prop.table(table(dfall$agegrp, dfall$UserLanguage),2)
+
+#Frequency tables to categorical data to understand how frequently a variable appears in each language
+chisq.test(dfall$agegrp,dfall$UserLanguage) # There are differences between groups
+
+```
+
+
+## Studies
+
+```{r}
+# studies 1 = less than secondary school, 2 = Secondary School, 3= Some college education, 4 = BA, 5 = Master, 6 = Professional Degree, 7= Doctorate)
+table(df$Q1.4)
+table(df$Q1.4, df$UserLanguage)
+table(dfall$Q1.4)
+table(dfall$Q1.4, dfall$UserLanguage)
+
+# categories of studies 1 = less than secondary, 2 = secondary school, 3 = some college education, 4 = college education, 5 = professional degree
+
+dfall$studies <- NULL
+dfall$studies[dfall$Q1.4 == 1] <- 1
+dfall$studies[dfall$Q1.4 == 2] <- 2
+dfall$studies[dfall$Q1.4 == 3] <- 3
+dfall$studies[dfall$Q1.4== 4 | dfall$Q1.4== 5 | dfall$Q1.4== 7] <- 4
+dfall$studies[dfall$Q1.4== 6] <- 5
+dfall$studies <- as.factor(dfall$studies)
+table(dfall$studies)
+table(dfall$studies, dfall$UserLanguage)
+prop.table(table(dfall$studies, dfall$UserLanguage), 2)
+
+levels(dfall$studies) <- c("Less than secondary","Secondary school","Some college", "College degree", "Professional education")
+table(dfall$studies)
+table(dfall$studies, dfall$UserLanguage)
+prop.table(table(dfall$studies, dfall$UserLanguage), 2)
+
+#Frequency tables
+chisq.test(dfall$studies, dfall$UserLanguage)
+table(dfall$studies, dfall$UserLanguage)
+prop.table(table(dfall$studies, dfall$UserLanguage),2)
+
+#Logistic regression
+model <- glm(studies ~ UserLanguage ,family=binomial(link='logit'),data=dfall)
+summary(model)
+```
+
+## Profession with Languages
+
+```{r}
+# profession 1, 2, 3, 4, 5 are related to language, 6 is others.
+table(df$Q1.5)
+table(df$Q1.5, df$UserLanguage)
+
+# categories of profession 1 = related to languages and 6 = others
+df$prof <- NULL
+df$prof[df$Q1.5==6] <- 6
+df$prof[is.na(df$prof)==TRUE & is.na(df$Q1.5)==FALSE & df$Q1.5 != ""] <- 1
+df$prof <- as.factor(df$prof)
+table(df$prof)
+
+# categories of profession 1 = related to languages and 6 = others
+dfall$prof <- NULL
+dfall$prof[dfall$Q1.5==6] <- 6
+dfall$prof[is.na(dfall$prof)==TRUE & is.na(dfall$Q1.5)==FALSE & dfall$Q1.5 != ""] <- 1
+dfall$prof <- as.factor(dfall$prof)
+table(dfall$prof)
+table(dfall$prof, dfall$UserLanguage)
+
+#distribution of profession by condition
+table(df$prof, df$Condition)
+ProfCond <- table(df$prof, df$Condition)
+addmargins(ProfCond)
+prop.table(ProfCond, margin = 2)
+addmargins(round(100*prop.table(ProfCond, margin = 2), digits = 0))
+
+#distribution of profession by language
+table(df$prof, df$UserLanguage)
+ProfCond <- table(df$prof, df$UserLanguage)
+addmargins(ProfCond)
+prop.table(ProfCond, margin = 2)
+addmargins(round(100*prop.table(ProfCond, margin = 2), digits = 0))
+
+```
+
+## Mother Tongue
+
+```{r}
+# mother tongue, native & bilinguals 
+table(df$Q1.6, df$UserLanguage) #1 is Catalan or Dutch and 3 is Spanish/Catalan or English/Dutch
+table(dfall$Q1.6, dfall$UserLanguage)
+
+dfall$mothertongue <- as.factor(dfall$Q1.6);
+  levels(dfall$mothertongue) <- c("Catalan or Dutch","Spanish/Catalan or English/Dutch")
+  table(dfall$mothertongue,dfall$Q1.1)
+  table(dfall$mothertongue, dfall$UserLanguage)
+```
+
+## Reading section / analysis
+
+```{r}
+
+# reading porcentage Q1.10_1 represents Catalan or Dutch, Q1.10_2 represents Spanish or English, Q1.10_3 Represents others
+
+summary(dfall$Q1.10_1)
+summary(dfall$Q1.10_2)
+summary(dfall$Q1.10_3)
+
+# Only Dutch
+summary(AllNL$Q1.10_1)
+summary(AllNL$Q1.10_2)
+summary(AllNL$Q1.10_3)
+
+# Only Catalan
+summary(CA$Q1.10_1)
+summary(CA$Q1.10_2)
+summary(CA$Q1.10_3)
+
+# reading frequency 1= Never, 2= Once every three months, 3= Once a month, 4= Once or twice per week, 5= Daily
+table(df$Q1.7)
+table(df$Q1.7, df$UserLanguage)
+table(dfall$Q1.7)
+table(dfall$Q1.7, dfall$UserLanguage)
+
+#Categories reading
+df$cateReading <- df$Q1.7
+df$cateReading[df$Q1.7 %in% c(1,2)] <- 1
+df$cateReading[df$Q1.7 %in% c(4,5)] <- 4
+table(df$cateReading)
+table(df$cateReading, df$UserLanguage)
+
+df$cateReading <- as.factor(df$cateReading);
+  levels(df$cateReading) <- c("Less than once a month","Once a month","More than once a month")
+  table(df$cateReading,df$Q1.7)
+  table(df$cateReading)
+  table(df$cateReading, df$UserLanguage)
+
+# like reading 1 = dislike a great deal, 2 = dislike somewhat, 3 = Neither like or dislike, 4= Like somewhat, 5 = Like a lot")
+table(df$Q1.8)
+table(df$Q1.8, df$UserLanguage) # AT. many more 5s in NL. If there are diffs between languages this may be one of the reasons
+
+df$LikeReading <- df$Q1.8
+df$LikeReading[df$Q1.8 %in% c(1,2)] <- 1
+df$LikeReading[df$Q1.8 %in% c(4,5)] <- 4
+table(df$LikeReading)
+table(df$LikeReading, df$UserLanguage)
+
+# like reading ALL 1 = dislike a great deal, 2 = dislike somewhat, 3 = Neither like or dislike, 4= Like somewhat, 5 = Like a lot
+
+dfall$LikeReading <- dfall$Q1.8
+dfall$LikeReading[dfall$Q1.8 %in% c(1,2)] <- 1
+dfall$LikeReading[dfall$Q1.8 %in% c(4,5)] <- 4
+table(dfall$LikeReading)
+table(dfall$LikeReading, dfall$UserLanguage)
+
+dfall$LikeReading <- as.factor(dfall$LikeReading);
+  levels(dfall$LikeReading) <- c("Dislike","Neither like nor dislike","Like")
+  table(dfall$LikeReading,dfall$Q1.8)
+  table(dfall$LikeReading)
+  table(dfall$LikeReading, dfall$UserLanguage)
+
+table(dfall$Q1.8)
+table(dfall$Q1.8, dfall$UserLanguage)
+LikeReadingLang <-table(dfall$Q1.8, dfall$UserLanguage)
+prop.table(LikeReadingLang)
+round(100*prop.table(LikeReadingLang), digits=0)
+
+#Support for reading
+table(df$Q1.9) # 1,3,4 & 5 = electronic, 2 = paper, 6 = audiobooks, 7 = others
+table(df$Q1.9)
+table(dfall$Q1.9)
+
+# frequency of reading in Catalan or Dutch 1= Never, 2= Once every three months, 3= Once a month, 4= Once or twice per week, 5= Daily
+dfall$FrequencyLang <- dfall$Q1.12
+dfall$FrequencyLang <- as.factor(dfall$FrequencyLang);
+  levels(dfall$FrequencyLang) <- c("Never","Once every three months","Once a month", "Once or twice per week", "Daily")
+  table(dfall$FrequencyLang,dfall$Q1.12)
+  table(dfall$FrequencyLang)
+  table(dfall$FrequencyLang, dfall$UserLanguage)
+FrequencyLang <-table(dfall$FrequencyLang, dfall$UserLanguage)
+prop.table(FrequencyLang, margin = 2)
+round(100*prop.table(FrequencyLang),digits=0)
+addmargins(round(100*prop.table(FrequencyLang, margin = 2), digits = 0))
+
+# length of time reading in Catalan or Dutch 1= I don't read, 2 = less than 15 minutes, 3 = between 15 and 30 minutes, 4 = between 31 and 60 minutes, 5 = more than 60
+dfall$ReadLength <- dfall$Q1.13
+dfall$ReadLength <- as.factor(dfall$ReadLength);
+  levels(dfall$ReadLength) <- c("I don't read","Between 15 and 30 minutes","Between 31 and 60", "More than 60")
+  table(dfall$ReadLength,dfall$Q1.13)
+  table(dfall$ReadLength)
+  table(dfall$ReadLength, dfall$UserLanguage)
+ReadLength <-table(dfall$ReadLength, dfall$UserLanguage)
+prop.table(ReadLength, margin = 2)
+round(100*prop.table(ReadLength),digits=0)
+addmargins(round(100*prop.table(ReadLength, margin = 2), digits = 0))
+```
+
+## Reading patterns
+```{r}
+# We create a variable that is the average of How often have you read a book in the last two years, How much do you like reading, How often have you read a book in CA/NL in the last two years, How long did you spend reading on these occasions.
+
+df$readingpatterns <- (df$Q1.7 + df$Q1.8 + df$Q1.12+ df$Q1.13)/4
+library(RcmdrMisc)
+numSummary(df$readingpatterns)
+
+dfall$readingpatterns <- (dfall$Q1.7 + dfall$Q1.8 + dfall$Q1.12+ dfall$Q1.13)/4
+numSummary(dfall$readingpatterns)
+
+# Cronbach alpha for reliability of scale
+dataRead <-data.frame(dfall$Q1.7, dfall$Q1.8, dfall$Q1.12, dfall$Q1.13)
+cronbach.alpha(dataRead, CI=TRUE)
+alpha(dataRead, keys=NULL,cumulative=FALSE, title=NULL, max=10,na.rm = TRUE,
+   check.keys=FALSE,n.iter=1,delete=TRUE,use="pairwise",warnings=TRUE,n.obs=NULL)
+
+# We plot reading patterns per User language
+ggplot(data =dfall,mapping = aes(x = UserLanguage,y = readingpatterns))+geom_boxplot(aes(fill=UserLanguage), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Language")+
+    scale_x_discrete(labels=c("CA","NL")) +
+    ylab("Reading Patterns")+
+    scale_fill_grey()
+
+# Significance Assumptions
+#Normal distribution Shapiro test Null hypothesis: the data are normally distributed - Alternative hypothesis: the data are not normally distributed
+shapiro.test(dfall$readingpatterns) #the data is not normally distributed so we need to run an alternative test to t-test. We want to see the variability between two conditions CA and NL, therefore we can use Wilcoxon rank sum text.
+
+hist(dfall$readingpatterns)
+
+#Homogeneity of variance
+res.ftest <- var.test(readingpatterns ~ UserLanguage, data = dfall) #The p-value is greater than the significance level alpha = 0.05. In conclusion, there is no significant difference between the variances of the two sets of data.
+res.ftest
+
+# Since the data is not normally distributed we run a Wilcoxon rank sum test to see if the reading patterns were different between languages
+wilcox.test(readingpatterns ~ UserLanguage, data=dfall)
+
+#To see the effect of the significance, we run wilcox_effsize
+wilcox_effsize(readingpatterns ~ UserLanguage, data=dfall)
+
+# To have a look at the differences between conditions, we look at these values per language independently, the scale here was 1 to 5, higher values indicate more reading
+ca_rpatterns <- (CA$Q1.7 + CA$Q1.8 + CA$Q1.12 + CA$Q1.13)/4
+nl_rpatterns <- (AllNL$Q1.7 + AllNL$Q1.8 + AllNL$Q1.12 + AllNL$Q1.13)/4
+
+# dfNl_rpatterns <- (dfNL$Q1.7 + dfNL$Q1.8 + dfNL$Q1.12 + dfNL$Q1.13)/4
+numSummary(ca_rpatterns)
+numSummary(nl_rpatterns)
+
+# We plot now the data per Condition and Language
+ggplot(data =dfall, mapping = aes(x = Condition,y = readingpatterns))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Reading patterns")+
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+# We model the data to see the interaction between the variables
+summary(lm(df$readingpatterns ~ df$Condition))
+summary(lm(df$readingpatterns[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$readingpatterns[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$readingpatterns ~ df$Condition + df$UserLanguage))
+
+#The data is not normally distributed so to see if participants varied according to the modality within each language, we run a Kruskal-Wallis test per language 
+conover.test (ca_rpatterns, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+conover.test (nl_rpatterns,AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+#If the language is not considered, are the reading patterns different depending on the modality.
+conover.test (dfall$readingpatterns,dfall$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+# Comprehension Questions
+```{r}
+# Descriptive values for comprehension questions
+numSummary(dfall$SC7)
+
+# means (may be more appropriate since we've ordinal data)
+tapply(df$SC7, df$Condition, mean)
+tapply(dfall$SC7, dfall$Condition, mean)
+tapply(dfall$SC7, dfall$Condition, median)
+
+tapply(dfall$SC7[dfall$UserLanguage=="CA"], dfall$Condition[dfall$UserLanguage=="CA"], mean)
+tapply(dfall$SC7[dfall$UserLanguage=="NL"], dfall$Condition[dfall$UserLanguage=="NL"], mean)
+
+numSummary(dfall$SC7[dfall$UserLanguage=="CA"])
+numSummary(dfall$SC7[dfall$UserLanguage=="NL"])
+
+# We plot the the data according to Condition
+ggplot(data =dfall,mapping = aes(x = Condition,y = SC7))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Comprehension") 
+
+# We plot the the data according to Condition and User Language
+ggplot(data =dfall,mapping = aes(x = Condition,y = SC7))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Comprehension")
+
+kruskal.test(SC7 ~ Condition, data = dfall)
+dunnTest(SC7 ~ Condition, data = dfall, method="holm")
+
+conover.test (CA$SC7,CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# To find the mean ranks for Kruskal-Wallis 
+# creating a rank variable
+require(pastecs)  # for descriptive statistics and ranking
+require(pgirmess) # for post hoc tests
+cacomprehensionRank <- rank(CA$SC7)
+
+# getting the descriptive statistics for the groups
+by(cacomprehensionRank, CA$Condition, stat.desc, basic = FALSE)
+
+# To find the mean ranks for Kruskal-Wallis in NL
+conover.test (AllNL$SC7,AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+conover.test (NL$SC7,NL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+# Narrative engagement overall
+```{r}
+# We create the engagement variable by averaging the 12 questions in the scale. We create also variables per language
+df$engagement <- (df$Q3.1 + df$Q3.2 + df$Q3.3 + df$Q3.4+ df$Q3.5+ df$Q3.6+ df$Q3.7+ df$Q3.8+ df$Q3.9+ df$Q3.10+ df$Q3.11+ df$Q3.12)/12
+dfall$engagement <- (dfall$Q3.1 + dfall$Q3.2 + dfall$Q3.3 + dfall$Q3.4+ dfall$Q3.5+ dfall$Q3.6+ dfall$Q3.7+ dfall$Q3.8+ dfall$Q3.9+ dfall$Q3.10+ dfall$Q3.11+ dfall$Q3.12)/12
+CA$engagement <- (CA$Q3.1 + CA$Q3.2 + CA$Q3.3 + CA$Q3.4+ CA$Q3.5+ CA$Q3.6+ CA$Q3.7+ CA$Q3.8+ CA$Q3.9+ CA$Q3.10+ CA$Q3.11+ CA$Q3.12)/12
+AllNL$engagement <-(AllNL$Q3.1 + AllNL$Q3.2 + AllNL$Q3.3 + AllNL$Q3.4+ AllNL$Q3.5+ AllNL$Q3.6+ AllNL$Q3.7+ AllNL$Q3.8+ AllNL$Q3.9+ AllNL$Q3.10+ AllNL$Q3.11+ AllNL$Q3.12)/12
+NL$engagement <- (NL$Q3.1 + NL$Q3.2 + NL$Q3.3 + NL$Q3.4+ NL$Q3.5+ NL$Q3.6+ NL$Q3.7+ NL$Q3.8+ NL$Q3.9+ NL$Q3.10+ NL$Q3.11+ NL$Q3.12)/12
+
+# We check Cronbach alpha for reliability of the entire scale
+dataEng <- data.frame(dfall$Q3.1, dfall$Q3.2, dfall$Q3.3, dfall$Q3.4, dfall$Q3.5, dfall$Q3.6, dfall$Q3.7, dfall$Q3.8, dfall$Q3.9, dfall$Q3.10,dfall$Q3.11, dfall$Q3.12)
+cronbach.alpha(dataEng, CI=TRUE)
+alpha(dataEng, keys=NULL,cumulative=FALSE, title=NULL, max=10,na.rm = TRUE,
+   check.keys=FALSE,n.iter=1,delete=TRUE,use="pairwise",warnings=TRUE,n.obs=NULL)
+
+# We plot the data on engagement according to Condition
+ggplot(data =df,mapping = aes(x = Condition,y = engagement))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative engagement overall") 
+
+# We plot the data on engagement according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = engagement))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+    ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative engagement overall")
+
+# We plot the data on engagement according to Condition and Language including the D condition
+ggplot(data =dfall,mapping = aes(x = Condition,y = engagement))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+    ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Narrative engagement overall")+
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+# Only CA
+ggplot(data =CA,mapping = aes(x = Condition,y = engagement))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+    ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative engagement overall") 
+
+# Only NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = engagement))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+    ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Narrative engagement overall")
+
+# We check normality by looking at a histogram
+hist(dfall$engagement) # the data is slightly skewed
+
+#summary(lm(df$engagement ~ df$Condition)) 
+summary(lm(dfall$engagement ~ dfall$Condition)) 
+summary(lm(dfall$engagement[dfall$UserLanguage=="CA"] ~ dfall$Condition[dfall$UserLanguage=="CA"]))
+summary(lm(dfall$engagement[dfall$UserLanguage=="NL"] ~ dfall$Condition[dfall$UserLanguage=="NL"]))
+summary(lm(dfall$engagement ~ dfall$Condition * dfall$UserLanguage))
+summary(lm(dfall$engagement ~ dfall$Condition + dfall$UserLanguage))
+
+#Check assumptions for regression model
+# Regression assumptions
+model <- lm(dfall$engagement ~ dfall$Condition + dfall$UserLanguage)# the two are predictors
+
+lm_log.model = lm(log1p(engagement) ~ Condition + UserLanguage, data = dfall)
+summary(lm_log.model)
+
+# Residuals vs Fitted
+plot(lm_log.model, 1)
+
+#Predictors (x) Are Independent and Observed with Negligible Error
+durbinWatsonTest(lm_log.model)
+
+# a p-value > 0.05 would give us enough evidence to state that our independence assumption is met.
+
+#Assumption Three: Residual Errors Have a Mean Value of Zero
+#We can  check this assumption by looking at the same residual vs fitted plot.
+
+#Assumption Four: Residual Errors Have Constant Variance
+plot(lm_log.model, 3)
+
+#Homoscedasticity (as before)
+ncvTest(lm_log.model)
+
+# Normality
+plot(lm_log.model, which = 2)
+
+#  Residuals follow a normal distribution
+shapiro.test(residuals(lm_log.model))
+
+# Multicolinearity
+car::vif(model)
+
+#Assumption Five: Residual Errors Are Independent from Each Other and Predictors (x)
+
+# Assumptions are not met so we run Kruskal-Wallis per language and post-hoc comparisons with Conover Iman test with Holm-Bonferroni correction.
+
+require(pastecs)  # for descriptive statistics and ranking
+require(pgirmess) # for post hoc tests
+
+# To find the mean ranks for Kruskall Wallis 
+# creating a rank variable
+caengagementRank <- rank(CA$engagement)
+
+# getting the descriptive statistics for the groups
+by(caengagementRank, CA$Condition, stat.desc, basic = FALSE)
+
+# Conover-Iman test gives better results for pairwise comparisons (Conover and Iman, 1979)
+library(conover.test)
+conover.test (CA$engagement, CA$Condition, method="holm", kw=TRUE, label=TRUE, wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# Effect size
+library(rcompanion)
+ordinalEtaSquared(x = CA$engagement,
+                  g = CA$Condition, 
+                  ci = TRUE)
+
+epsilonSquared(x = CA$engagement,
+               g = CA$Condition)
+
+# To find the mean ranks for Kruskal-Wallis for NL
+# creating a rank variable
+nlengagementRank <- rank(AllNL$engagement)
+
+# getting the descriptive statistics for the groups
+by(nlengagementRank, AllNL$Condition, stat.desc, basic = FALSE)
+
+# post-hoc test for identifying statistical significant differences between the groups
+kruskalmc(engagement ~ Condition, data = AllNL)
+
+conover.test (AllNL$engagement,AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# Effect size
+library(rcompanion)
+ordinalEtaSquared(x = AllNL$engagement,
+                  g = AllNL$Condition, 
+                  ci = TRUE)
+
+epsilonSquared(x = AllNL$engagement,
+               g = AllNL$Condition)
+```
+
+
+## Narrative understanding
+```{r}
+# The variable narrative understanding is created per language
+df$n_underst <- (df$Q3.1 + df$Q3.2 + df$Q3.3)/3
+can_underst <- (CA$Q3.1 + CA$Q3.2 + CA$Q3.3)/3
+nln_underst <- (AllNL$Q3.1 + AllNL$Q3.2 + AllNL$Q3.3)/3
+
+#Descriptive values per questions
+tapply(df$Q3.1, df$Condition, mean) # At points, I had a hard time making sense of what was going on in the story
+tapply(df$Q3.2, df$Condition, mean) # My understanding of the characters is unclear.
+tapply(df$Q3.3, df$Condition, mean) # I had a hard time recognizing the thread of the story.
+
+# We plot the data according to Condition
+ggplot(data =df,mapping = aes(x = Condition,y = n_underst))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+    ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative understanding")
+
+# We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = n_underst))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative understanding") 
+
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = can_underst))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative understanding") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nln_underst))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Narrative understanding") 
+
+# Models
+summary(lm(df$n_underst ~ df$Condition))
+summary(lm(df$n_underst[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$n_underst[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$n_underst ~ df$Condition + df$UserLanguage))
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+conover.test (can_underst, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+conover.test (nln_underst, AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+## Attentional Focus
+```{r}
+# The variable attentional focus is created per language
+df$att_focus <- (df$Q3.4 + df$Q3.5 + df$Q3.6)/3
+ca_att_focus <- (CA$Q3.4 + CA$Q3.5 + CA$Q3.6)/3
+nl_att_focus <- (AllNL$Q3.4 + AllNL$Q3.5 + AllNL$Q3.6)/3
+
+#Descriptive values per questions
+tapply(df$Q3.4, df$Condition, mean) # I found my mind wandering while reading the story.
+tapply(df$Q3.5, df$Condition, mean) # While reading, I found myself thinking about other things.
+tapply(df$Q3.6, df$Condition, mean) # I had a hard time keeping my mind on the story.
+
+# We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = att_focus))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Attentional Focus") 
+
+ggplot(data =df,mapping = aes(x = Condition,y = att_focus))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Attentional Focus")
+
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = ca_att_focus))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Attentional Focus") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nl_att_focus))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Attentional Focus") 
+
+# Models
+summary(lm(df$att_focus ~ df$Condition))
+summary(lm(df$att_focus[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$att_focus[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$att_focus ~ df$Condition + df$UserLanguage))
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+conover.test (ca_att_focus, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+conover.test (nl_att_focus, AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+## Narrative presence
+```{r}
+# The variable narrative presence is created per language
+df$n_presence <- (df$Q3.7 + df$Q3.8 + df$Q3.9)/3
+#n_presence <- (df$Q3.7 + df$Q3.8 + df$Q3.9)/3
+ca_n_presence <- (CA$Q3.7 + CA$Q3.8 + CA$Q3.9)/3
+nl_n_presence <- (AllNL$Q3.7 + AllNL$Q3.8 + AllNL$Q3.9)/3
+
+#Descriptive values per questions
+tapply(df$Q3.7, df$Condition, mean) #During the reading, my body was in the room, but my mind was inside the world created by the story.
+tapply(df$Q3.8, df$Condition, mean) #The story created a new world, and then that world suddenly disappeared when the story ended.
+tapply(df$Q3.9, df$Condition, mean) #At times during the reading, I was closer to the situation described in the story than the realities of here-and-now
+
+# We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = n_presence))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative presence") 
+
+ggplot(data =df,mapping = aes(x = Condition,y = n_presence))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative presence")
+
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = ca_n_presence))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Narrative presence") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nl_n_presence))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Narrative presence") 
+
+#Models
+summary(lm(df$n_presence ~ df$Condition)) 
+summary(lm(df$n_presence[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$n_presence[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$n_presence ~ df$Condition + df$UserLanguage))
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+conover.test (ca_n_presence, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+conover.test (nl_n_presence, AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+## Emotional engagement
+```{r}
+# The variable emotional engagement is created per language
+df$e_engag <- (df$Q3.10 + df$Q3.11 + df$Q3.12)/3
+#e_engag <- (df$Q3.10 + df$Q3.11 + df$Q3.12)/3
+ca_e_engag <- (CA$Q3.10 + CA$Q3.11 + CA$Q3.12)/3
+nl_e_engag <- (AllNL$Q3.10 + AllNL$Q3.11 + AllNL$Q3.12)/3
+
+#Descriptive values per questions
+tapply(df$Q3.10, df$Condition, mean) #During the narrative, when a main character suffered, I felt sad.
+tapply(df$Q3.11, df$Condition, mean) #The story affected me emotionally.
+tapply(df$Q3.12, df$Condition, mean) #I felt sorry for some of the characters in the story.
+
+# We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = e_engag))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Emotional engagement") 
+
+ggplot(data =df,mapping = aes(x = Condition,y = e_engag))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Emotional engagement")
+
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = ca_e_engag))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Emotional engagement") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nl_e_engag))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Emotional engagement") 
+
+#Models
+summary(lm(df$e_engag ~ df$Condition)) 
+summary(lm(df$e_engag[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$e_engag[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$e_engag ~ df$Condition + df$UserLanguage))
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+conover.test (ca_e_engag, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+conover.test (nl_e_engag, AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+# Visual imagery
+```{r}
+
+# The variable visual imagery is created per language
+df$imagery <- (df$Q3.13 + df$Q3.14 + df$Q3.15)/3
+dfall$imagery <- (dfall$Q3.13 + dfall$Q3.14 + dfall$Q3.15)/3
+ca_imagery <- (CA$Q3.13 + CA$Q3.14 + CA$Q3.15)/3
+nl_imagery <- (AllNL$Q3.13 + AllNL$Q3.14 + AllNL$Q3.15)/3
+
+#Descriptive values per questions
+tapply(df$Q3.13, df$Condition, mean) # When I was reading the story I had an image of the main characters in mind
+tapply(df$Q3.14, df$Condition, mean) # When I was reading the story I could see the situations happening in the story being played out before my eyes.
+tapply(df$Q3.15, df$Condition, mean) # I could imagine what the world in which the story took place looked like.
+
+# We plot the data according to Condition and Language
+ggplot(data =dfall,mapping = aes(x = Condition,y = imagery))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Visual imagery") 
+
+ggplot(data =dfall,mapping = aes(x = Condition,y = imagery))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Visual imagery")
+
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = ca_imagery))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Visual Imagery") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nl_imagery))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Visual imagery") 
+
+# Models
+summary(lm(df$imagery ~ df$Condition)) 
+summary(lm(df$imagery[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$imagery[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$imagery ~ df$Condition + df$UserLanguage))
+
+#Check assumptions for regression model
+# Regression assumptions
+model <- lm(df$imagery ~ df$Condition + df$UserLanguage)# the two are predictors
+
+# Residuals vs Fitted
+plot(model, 1)
+
+#Predictors (x) Are Independent and Observed with Negligible Error
+durbinWatsonTest(model)
+
+#Assumption Three: Residual Errors Have a Mean Value of Zero
+
+#Assumption Four: Residual Errors Have Constant Variance
+plot(model, 3)
+
+#Homoscedasticity (as before)
+ncvTest(model)
+
+# Normality
+plot(model, which = 2)
+
+#  Residuals follow a normal distribution
+shapiro.test(residuals(model))
+
+# Multicolinearity
+car::vif(model)
+
+#Assumption Five: Residual Errors Are Independent from Each Other and Predictors (x)
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+conover.test (ca_imagery, CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+conover.test (nl_imagery, AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+# Enjoyment
+
+```{r}
+# The variable enjoyment is created per language
+df$enjoyment <- (df$Q5.1 + df$Q5.2 + df$Q5.3)/3
+dfall$enjoyment <- (dfall$Q5.1 + dfall$Q5.2 + dfall$Q5.3)/3
+caenjoyment <- (CA$Q5.1 + CA$Q5.2 + CA$Q5.3)/3
+nlenjoyment <- (AllNL$Q5.1 + AllNL$Q5.2 + AllNL$Q5.3)/3
+
+# Descriptive values per question
+tapply(df$Q5.1, df$Condition, mean) # How much did you enjoy reading the text?
+tapply(df$Q5.2, df$Condition, mean) # Would you recommend this text to a friend?
+tapply(df$Q5.3, df$Condition, mean) # Do you think this text is an example of high literature?
+tapply(df$enjoyment, df$Condition, mean)
+tapply(df$enjoyment, df$Condition, median)
+
+# Cronbach alpha for scale reliability
+dataEnjoy <-data.frame(df$Q5.1, df$Q5.2, df$Q5.3)
+newdataEnjoy <- na.omit(dataEnjoy)
+cronbach.alpha(newdataEnjoy, CI=TRUE)
+alpha(newdataEnjoy, keys=NULL,cumulative=FALSE, title=NULL, max=10,na.rm = TRUE,
+   check.keys=FALSE,n.iter=1,delete=TRUE,use="pairwise",warnings=TRUE,n.obs=NULL)
+
+# We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = enjoyment))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Enjoyment")
+
+ggplot(data =dfall,mapping = aes(x = Condition,y = enjoyment))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Enjoyment")  +
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+  
+# We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = caenjoyment))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Enjoyment") 
+
+# We plot the data for NL
+ggplot(data = AllNL,mapping = aes(x = Condition,y = nlenjoyment))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Enjoyment")
+
+#Models
+summary(lm(df$enjoyment ~ df$Condition))
+summary(lm(df$enjoyment[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$enjoyment[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$enjoyment ~ df$Condition + df$UserLanguage))
+
+#Check assumptions for regression model
+# Regression assumptions
+model <- lm(df$enjoyment ~ df$Condition + df$UserLanguage)# the two are predictors
+
+# Residuals vs Fitted
+plot(model, 1)
+
+#Predictors (x) Are Independent and Observed with Negligible Error
+durbinWatsonTest(model)
+
+#Assumption Three: Residual Errors Have a Mean Value of Zero
+
+#Assumption Four: Residual Errors Have Constant Variance
+plot(model, 3)
+
+#Homoscedasticity (as before)
+ncvTest(model)
+
+# Normality
+plot(model, which = 2)
+
+#  Residuals follow a normal distribution
+shapiro.test(residuals(model))
+
+# Multicolinearity
+car::vif(model)
+
+#Assumption Five: Residual Errors Are Independent from Each Other and Predictors (x)
+
+# We use Kruskal-Wallis per language as we did for NE for CA
+# To find the mean ranks for Kruskall Wallis 
+# creating a rank variable
+caenjoymentRank <- rank(caenjoyment)
+
+# getting the descriptive statistics for the groups
+by(caenjoymentRank, CA$Condition, stat.desc, basic = FALSE)
+
+# post-hoc test for identifying statistical significant differences between the groups
+kruskalmc(caenjoyment ~ Condition, data = CA)
+
+conover.test (caenjoyment, CA$Condition, method="holm", kw=TRUE, label=TRUE, wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# Effect size
+library(rcompanion)
+ordinalEtaSquared(x = caenjoyment,
+                  g = CA$Condition, 
+                  ci = TRUE)
+
+#The following rules of thumb are used to interpret values for Eta squared:
+
+#.01: Small effect size
+#.06: Medium effect size
+#.14 or higher: Large effect size
+
+epsilonSquared(x = caenjoyment,
+               g = CA$Condition)
+
+# We use Kruskal-Wallis per language as we did for NE for NL
+# To find the mean ranks for Kruskall Wallis 
+# creating a rank variable
+nlenjoymentRank <- rank(nlenjoyment)
+
+# getting the descriptive statistics for the groups
+by(nlenjoymentRank, AllNL$Condition, stat.desc, basic = FALSE)
+
+# post-hoc test for identifying statistical significant differences between the groups
+kruskalmc(nlenjoyment ~ Condition, data = AllNL)
+
+conover.test (nlenjoyment,AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+```
+
+# Translation Reception
+```{r}
+#We create the variable translation reception
+df$t_rep <- (df$Q4.1 + df$Q4.2 + df$Q4.3 + df$Q4.5 + df$Q4.7 + df$Q4.9+ df$Q4.10+ df$Q4.12)/8
+summary(df$t_rep)
+cat_rep <- (CA$Q4.1 + CA$Q4.2 + CA$Q4.3 + CA$Q4.5 + CA$Q4.7 + CA$Q4.9 + CA$Q4.10+ CA$Q4.12)/8
+nlt_rep <- (NL$Q4.1 + NL$Q4.2 + NL$Q4.3 + NL$Q4.5 + NL$Q4.7 + NL$Q4.9 + NL$Q4.10 + NL$Q4.12)/8
+
+#Cronbach alpha for scale reliability
+dataTrans <-data.frame(df$Q4.1, df$Q4.2, df$Q4.3, df$Q4.5, df$Q4.7, df$Q4.9, df$Q4.10, df$Q4.12)
+cronbach.alpha(dataTrans, CI=TRUE, na.rm = TRUE) 
+alpha(dataTrans, keys=NULL,cumulative=FALSE, title=NULL, max=10,na.rm = TRUE,
+   check.keys=FALSE,n.iter=1,delete=TRUE,use="pairwise",warnings=TRUE,n.obs=NULL)
+# The consistency of the questions is higher without question Q4.11. It is removed from the plots
+
+#Descriptive values per question
+tapply(df$Q4.1, df$Condition, mean) # How easy was the text to understand?
+tapply(df$Q4.2, df$Condition, mean) # I thought the text was very well written.
+tapply(df$Q4.3, df$Condition, mean) #  I found words, sentences or paragraphs that were difficult to understand. (a higher value indicates that there were no difficulties)
+tapply(df$Q4.5, df$Condition, mean) # I found words, sentences or paragraphs that I specially liked. (a higher value means that there were more objects liked)
+tapply(df$Q4.7, df$Condition, mean) # I was conscious that I was reading a translation.(a higher value indicates no consciousness)
+tapply(df$Q4.9, df$Condition, mean) #  What do you think of the translation?
+tapply(df$Q4.10, df$Condition, mean) # How would you like to read a text by the same author and translator? (a higher value indicates liking the translation)
+tapply(df$Q4.11, df$Condition, mean) # How would you like to read a text by the same author and another translator? (a higher value indicates liking the translation)
+tapply(df$Q4.12, df$Condition, mean) # How would you like to read a text by another author and the same translator? (a higher value indicates liking the translation)
+
+tapply(df$Q4.9[df$UserLanguage=="CA"], df$Condition[df$UserLanguage=="CA"], mean)
+tapply(df$Q4.9[df$UserLanguage=="NL"], df$Condition[df$UserLanguage=="NL"], mean)
+tapply(df$t_rep[df$UserLanguage=="CA"], df$Condition[df$UserLanguage=="CA"], mean)
+tapply(df$t_rep[df$UserLanguage=="NL"], df$Condition[df$UserLanguage=="NL"], mean)
+tapply(CA$Q4.7, CA$Condition, mean)
+tapply(NL$Q4.7, NL$Condition, mean)
+
+#We plot the data according to Condition and Language
+ggplot(data =df,mapping = aes(x = Condition,y = t_rep))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Translation reception") 
+
+ggplot(data =df,mapping = aes(x = Condition,y = t_rep))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Translation reception")+
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+#We plot the data for CA
+ggplot(data = CA,mapping = aes(x = Condition,y = cat_rep))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Translation reception") 
+
+#We plot the data for CA
+ggplot(data = NL,mapping = aes(x = Condition,y = nlt_rep))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Dutch") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT")) +
+    ylab("Translation reception")
+
+#Models
+summary(lm(df$t_rep ~ df$Condition)) # =
+summary(lm(df$t_rep[df$UserLanguage=="CA"] ~ df$Condition[df$UserLanguage=="CA"]))
+summary(lm(df$t_rep[df$UserLanguage=="NL"] ~ df$Condition[df$UserLanguage=="NL"]))
+summary(lm(df$t_rep ~ df$Condition + df$UserLanguage))
+
+#Kruskal Wallis per language and bonferroni test for CA
+conover.test (cat_rep,CA$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# To find the mean ranks for Kruskal-Wallis 
+# creating a rank variable
+cat_repRank <- rank(cat_rep)
+
+# getting the descriptive statistics for the groups
+by(cat_repRank, CA$Condition, stat.desc, basic = FALSE)
+
+# post-hoc test for identifying statistical significant differences between the groups
+kruskalmc(cat_rep ~ Condition, data = CA)
+
+#Kruskal Wallis per language and bonferroni test for NL
+conover.test (nlt_rep,NL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# To find the mean ranks for Kruskall Wallis 
+# creating a rank variable
+nlt_repRank <- rank(nlt_rep)
+
+# getting the descriptive statistics for the groups
+by(nlt_repRank, NL$Condition, stat.desc, basic = FALSE)
+
+# post-hoc test for identifying statistical significant differences between the groups
+kruskalmc(nlt_rep ~ Condition, data = NL)
+```
+
+# Source Text Reception
+```{r}
+# We create the variable reception of the original
+dfall$en_rep <- (dfall$X4.1 +dfall$X4.2+ dfall$X4.3+ dfall$X4.5 + dfall$X4.7) /5
+summary(dfall$en_rep)
+
+# We take the 4 questions that were common to the translation and to the source text
+# Q4.1 How easy was the text to understand?
+# Q4.2 I thought the text was very well written.
+# Q4.4 I found words, sentences or paragraphs that were difficult to understand. (a higher value indicates that there were no difficulties)
+# Q4.5 I found words, sentences or paragraphs that I specially liked. (a higher value means that there were more objects liked)
+
+# To create common reception questions from English, Dutch and Catalan
+dfall$X4.1[is.na(dfall$X4.1)] <- 0
+dfall$Q4.1[is.na(dfall$Q4.1)] <- 0
+dfall$Rep_Q1 <- (dfall$Q4.1+dfall$X4.1)
+
+dfall$X4.2[is.na(dfall$X4.2)] <- 0
+dfall$Q4.2[is.na(dfall$Q4.2)] <- 0
+dfall$Rep_Q2 <- (dfall$Q4.2+dfall$X4.2)
+
+dfall$X4.3[is.na(dfall$X4.3)] <- 0
+dfall$Q4.3[is.na(dfall$Q4.3)] <- 0
+dfall$Rep_Q3 <- (dfall$Q4.3+dfall$X4.3)
+
+dfall$X4.5[is.na(dfall$X4.5)] <- 0
+dfall$Q4.5[is.na(dfall$Q4.5)] <- 0
+dfall$Rep_Q5 <- (dfall$Q4.5+dfall$X4.5)
+
+#We create the variable translation reception vs original text
+dfall$st_rep <- (dfall$Rep_Q1 +dfall$Rep_Q2+ dfall$Rep_Q3+ dfall$Rep_Q5) /4
+summary(dfall$st_rep)
+
+CA$cast_rep <- (dfall$st_rep[dfall$UserLanguage=="CA"])
+AllNL$nlst_rep <- (dfall$st_rep[dfall$UserLanguage=="NL"])
+
+# Cronbach alpha for reliability of the scale
+dataRep <-data.frame(dfall$Rep_Q1, dfall$Rep_Q2,  dfall$Rep_Q3,  dfall$Rep_Q5)
+cronbach.alpha(dataRep, CI=TRUE, na.rm = TRUE) 
+alpha(dataRep, keys=NULL,cumulative=FALSE, title=NULL, max=10,na.rm = TRUE,
+   check.keys=FALSE,n.iter=1,delete=TRUE,use="pairwise",warnings=TRUE,n.obs=NULL)
+# Score of 0.58 is not very reliable
+
+# We plot the data according to the variable source text reception
+ggplot(data =dfall,mapping = aes(x = Condition,y = st_rep))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition and Source Text")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Reception of original vs. translations")+
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+# We plot the data according to each questions
+ggplot(data =dfall,mapping = aes(x = Condition,y = Rep_Q1))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition and Source Text")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Easty to Understand")
+
+ggplot(data =dfall,mapping = aes(x = Condition,y = Rep_Q2))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition and Source Text")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Well written")
+
+ggplot(data =dfall,mapping = aes(x = Condition,y = Rep_Q3))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition and Source Text")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Difficult text")
+
+ggplot(data =dfall,mapping = aes(x = Condition,y = Rep_Q5))+geom_boxplot(aes(fill=UserLanguage), show.legend = TRUE)+
+     ggtitle("Catalan and Dutch") +
+    xlab("Reading condition and Source Text")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Nice text")
+
+summary(lm(dfall$st_rep ~ dfall$Condition)) # B&C dec, neither sig
+summary(lm(dfall$st_rep[dfall$UserLanguage=="CA"] ~ dfall$Condition[dfall$UserLanguage=="CA"]))
+summary(lm(dfall$st_rep[dfall$UserLanguage=="NL"] ~ dfall$Condition[dfall$UserLanguage=="NL"]))
+summary(lm(dfall$st_rep ~ dfall$Condition + dfall$UserLanguage))
+
+#Check assumptions for regression model
+# Regression assumptions
+model <- lm(dfall$st_rep ~ dfall$Condition + dfall$UserLanguage)# the two are predictors
+
+# Residuals vs Fitted
+plot(model, 1)
+
+#Predictors (x) Are Independent and Observed with Negligible Error
+durbinWatsonTest(model)
+
+#Assumption Three: Residual Errors Have a Mean Value of Zero
+
+#Assumption Four: Residual Errors Have Constant Variance
+plot(model, 3)
+
+#Homoscedasticity (as before)
+ncvTest(model)
+
+# Normality
+plot(model, which = 2)
+
+#  Residuals follow a normal distribution
+shapiro.test(residuals(model))
+
+# Multicolinearity
+car::vif(model)
+
+#Assumption Five: Residual Errors Are Independent from Each Other and Predictors (x)
+
+# We run Kruskal-Wallis test for NL
+conover.test (AllNL$nlst_rep,AllNL$Condition, method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# We run Kruskal-Wallis test for CA
+conover.test (CA$cast_rep, CA$Condition, method="holm", kw=TRUE, label=TRUE, wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# To find the mean ranks for Kruskall Wallis 
+# creating a rank variable
+cat2_repRank <- rank(dfall$st_rep[dfall$UserLanguage=="CA"])
+
+# getting the descriptive statistics for the groups
+by(cat2_repRank, CA$Condition, stat.desc, basic = FALSE)
+
+# creating a rank variable
+nl2_repRank <- rank(dfall$st_rep[dfall$UserLanguage=="NL"])
+
+# getting the descriptive statistics for the groups
+by(nl2_repRank, AllNL$Condition, stat.desc, basic = FALSE)
+```
+
+# Duration (by condition)
+```{r}
+# We briefly looked at the duration
+df_duration <- df[which(df$Duration..in.seconds. < 10000),] # remove outliers (very slow ones): 8 out of 88 (3 HT, 4 PE, 1 MT)
+table(df$Condition)
+table(df_duration$Condition)
+
+boxplot(df_duration$Duration..in.seconds. ~ df_duration$Condition, ylab="Duration (seconds)")
+
+df_duration2 <- df_duration[which(df_duration$Duration..in.seconds. < 3800),] # remove outliers (very slow ones): 7 out of 80 (2 HT, 2 PE, 3 MT)
+table(df_duration2$Condition)
+
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$Condition, ylab="Duration (seconds)")
+
+tapply(df_duration2$Duration..in.seconds., df_duration2$Condition, mean)
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$Condition)) 
+```
+
+## Duration (by device)
+```{r}
+# 1 = Computer, 2 = Table, 3 = Mobile, 4 = Other
+df_duration2$device <- as.factor(df_duration2$Q6.1);
+  levels(df_duration2$device) <- c("Computer","Table","Mobile", "Other")
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$device, ylab="Duration (seconds)")
+tapply(df_duration2$Duration..in.seconds., df_duration2$device, mean)
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$device)) 
+```
+
+## Duration (by gender)
+```{r}
+#1 = female, 2 = male, 3 = non-binary, 4 = prefer not to say
+
+df_duration2$gender <- as.factor(df_duration2$Q1.1);
+  levels(df_duration2$gender) <- c("Female","Male","Non-binary", "Prefer not to say")
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$gender, ylab="Duration (seconds)")
+tapply(df_duration2$Duration..in.seconds., df_duration2$gender, mean)
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$gender)) # no sig
+```
+
+## Duration (by age)
+```{r}
+# Categories of age 1 = 18-34; 2 = 35-54; 3 = 55-74; 4 = 75 or older  # Less coarse age ranges
+df_duration2$agegroup <- NULL
+df_duration2$agegroup[df_duration2$Q1.2== 2 | df_duration2$Q1.2==3] <- 1
+df_duration2$agegroup[df_duration2$Q1.2== 4 | df_duration2$Q1.2==5 ] <- 2
+df_duration2$agegroup[df_duration2$Q1.2== 6 | df_duration2$Q1.2==7 ] <- 3
+df_duration2$agegroup[df_duration2$Q1.2== 8 | df_duration2$Q1.2==9 ] <- 4
+df_duration2$agegroup <- as.factor(df_duration2$agegroup)
+levels(df_duration2$agegroup) <- c("18-34","35-54","55-74", "75 or Older")
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$agegroup, ylab="Duration (seconds)")
+tapply(df_duration2$Duration..in.seconds., df_duration2$agegroup, mean)
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$agegroup)) 
+```
+
+## Duration (by profession)
+```{r}
+# 1, 2, 3, 4, 5 = related to language; 6 = unrelated to language
+df_duration2$prof <- NULL
+df_duration2$prof[df_duration2$Q1.5==6] <- 6
+df_duration2$prof[is.na(df_duration2$prof)==TRUE & is.na(df_duration2$Q1.5)==FALSE & df_duration2$Q1.5 != ""] <- 1
+df_duration2$prof <- as.factor(df_duration2$prof)
+table(df_duration2$prof)
+levels(df_duration2$prof) <- c("Related to language","Unrelated to language")
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$prof, ylab="Duration (seconds)")
+tapply(df_duration2$Duration..in.seconds., df_duration2$prof, mean)
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$prof)) 
+```
+
+## Duration (by language)
+```{r}
+#1 is Catalan or Dutch and 3 is Spanish/Catalan or English/Dutch
+df_duration2$mothertongue <- as.factor(df_duration2$Q1.6);
+  levels(df_duration2$mothertongue) <- c("Monolingual","Bilingual")
+tapply(df_duration2$Duration..in.seconds., df_duration2$mothertongue, mean)
+boxplot(df_duration2$Duration..in.seconds. ~ df_duration2$mothertongue, ylab="Duration (seconds)")
+summary(lm(df_duration2$Duration..in.seconds. ~ df_duration2$mothertongue)) # no sig
+```
+
+# Aware of translation?
+```{r}
+# Were you aware that you were reading a translation? 1 Strongly agree and 7 Strongly disagree.The lower the mean value the more a participant is aware of the translation.
+table(df$Q4.7, df$Condition) 
+tapply(df$Q4.7, df$Condition, mean)
+```
+
+# Any paragraph liked?
+
+```{r}
+# I found words, sentences and paragraphs that I particularly liked. 7 Strongly agree and 1 Strongly disagree. The higher the mean value, the more words, sentences and paragraphs the participant liked.
+table(df$Q4.5, df$Condition) 
+tapply(df$Q4.5, df$Condition, mean)
+```
+
+# Any paragraph difficult?
+
+```{r}
+# I found words, sentences and paragraphs that were difficult to understand. 1 Strongly agree and 7 Strongly disagree. The lower the mean value, the more difficult words, sentences and paragraphs the participant found.
+table(df$Q4.3, df$Condition)
+tapply(df$Q4.3, df$Condition, mean)
+```
+
+# Payment
+
+```{r}
+# Payment 1 = less than a euro, 2 = between 1 and 5 euros, 3 = between 5 and 10 euros, 4 = between 10 and 15 euros and 5 = more than 15
+#SC11 = A, SC12 = B, SC13 = C, SC14 = D
+
+dfall$SC14[is.na(dfall$SC14)] <- 0
+# We add all the values to create a column for payment. For SC14, condition D, some people did not choose to read the original, so that is why some values are NA (17) here and not considered in the graphic.
+
+# We create the variables
+dfall$payment <-dfall$SC11+dfall$SC12+dfall$SC13+dfall$SC14
+dfall$payment[dfall$payment == 0] <- NA
+
+# We plot payment according to Condition
+ggplot(data =dfall,mapping = aes(x = Condition,y = payment))+geom_boxplot(aes(fill=Condition), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Payment")
+
+# We plot payment according to Condition and Language
+ggplot(data =dfall,mapping = aes(x = Condition,y = payment)) +geom_boxplot(aes(fill=UserLanguage), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("Reading condition")+
+    scale_x_discrete(labels=c("PE","MT","HT", "ST")) +
+    ylab("Payment")+
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+#Models
+summary(lm(dfall$payment ~ dfall$Condition))
+summary(lm(dfall$payment[dfall$UserLanguage=="CA"] ~ dfall$Condition[dfall$UserLanguage=="CA"]))
+summary(lm(dfall$payment[dfall$UserLanguage=="NL"] ~ dfall$Condition[dfall$UserLanguage=="NL"]))
+summary(lm(dfall$payment ~ dfall$Condition + dfall$UserLanguage))
+
+#Check assumptions for regression model
+# Regression assumptions
+model <- lm(dfall$payment ~ dfall$Condition + dfall$UserLanguage)# the two are predictors
+
+# Residuals vs Fitted
+plot(model, 1)
+
+#Predictors (x) Are Independent and Observed with Negligible Error
+durbinWatsonTest(model)
+
+#Assumption Three: Residual Errors Have a Mean Value of Zero
+
+#Assumption Four: Residual Errors Have Constant Variance
+plot(model, 3)
+
+#Homoscedasticity (as before)
+ncvTest(model)
+
+# Normality
+plot(model, which = 2)
+
+#  Residuals follow a normal distribution
+shapiro.test(residuals(model))
+
+# Multicolinearity
+car::vif(model)
+
+#Assumption Five: Residual Errors Are Independent from Each Other and Predictors (x)
+
+# Assumptions not met, so Kruskal Wallis per language and holm test
+conover.test (dfall$payment[dfall$UserLanguage=="CA"],dfall$Condition[dfall$UserLanguage=="CA"], method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# Creating a rank variable
+capaymentrank <- rank(dfall$payment[dfall$UserLanguage=="CA"])
+
+# getting the descriptive statistics for the groups
+by(capaymentrank, dfall$Condition[dfall$UserLanguage=="CA"], stat.desc, basic = FALSE)
+
+# For Dutch
+conover.test (dfall$payment[dfall$UserLanguage=="NL"],dfall$Condition[dfall$UserLanguage=="NL"], method="holm", kw=TRUE, label=TRUE,
+wrap=FALSE, table=TRUE, list=FALSE, rmc=FALSE, alpha=0.05, altp=FALSE)
+
+# Creating a rank variable
+nlpaymentrank <- rank(dfall$payment[df$UserLanguage=="NL"])
+nlpaymentrank <- na.omit(nlpaymentrank)
+
+# getting the descriptive statistics for the groups
+by(nlpaymentrank, dfall$Condition[dfall$UserLanguage=="NL"], stat.desc, basic = FALSE)
+```
+
+# Quality of MT
+
+```{r}
+#We make sure that na values are not included
+sum(!is.na(dfall$Q8.3))
+
+# Descriptive values
+mean(dfall$Q8.3, na.rm=TRUE)
+
+median(CA$Q8.3, na.rm=TRUE)
+median(NL$Q8.3, na.rm=TRUE)
+
+# We plot the data for the question on How would you rate the quality of the MT? In this case, 159 readers did not read this version, so ggplot will plot 64 instances.
+
+ggplot(data =dfall,mapping = aes(x = UserLanguage,y = Q8.3)) +geom_boxplot(aes(fill=UserLanguage), show.legend = FALSE)+
+     ggtitle("All") +
+    xlab("User Language")+
+    scale_x_discrete(labels=c("Catalan", "Dutch")) +
+    ylab("MT QA") +
+    scale_fill_grey(start = 0.5,
+    end = 1,)
+
+# We run a Wilcoxon test because we have two groups
+wilcox.test(Q8.3 ~ UserLanguage, data=dfall)
+
+#To see the effect of the significance, we run wilcox_effsize
+wilcox_effsize(Q8.3 ~ UserLanguage, data=dfall)
+```
+
+
+# Correlations between reading patterns & narrative engagement, enjoyment and translation reception
+
+```{r}
+#cor.test(x, y, method=c("pearson", "kendall", "spearman"))
+#SC8 reading patterns, SC9 enjoyment, SC3 translation reception, SC10 narrativement engagement
+#age and gender, profession?
+
+ggqqplot(df$SC8, ylab = "reading patterns")
+ggqqplot(df$SC9, ylab = "enjoyment")
+shapiro.test(df$SC8) # if p < 0.05 → not a normal distribution
+shapiro.test(df$SC9) # if p < 0.05 → not a normal distribution
+cor.test(df$SC9, df$SC8, method=c("spearman"))
+cor.test(df$SC9, df$SC8, method=c("kendall"))
+ggscatter(df, x = "SC8", y = "SC9", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Enjoyment")
+
+cor.test(df$SC3, df$SC8, method=c("kendall"))
+
+ggscatter(df, x = "SC8", y = "SC3", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Translation")
+
+cor.test(df$SC10, df$SC8, method=c("kendall"))
+ggscatter(df, x = "SC8", y = "SC10", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Narrative Engagement")
+
+cor.test(df$SC9, df$SC10, method=c("kendall"))
+ggscatter(df, x = "SC9", y = "SC10", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Enjoyment", ylab = "Narrative Engagement")
+
+#Catalan only
+cor.test(CA$SC10, CA$SC8, method=c("kendall"))
+ggscatter(CA, x = "SC8", y = "SC10", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Narrative Engagement")
+
+cor.test(CA$SC9, CA$SC8, method=c("kendall"))
+ggscatter(CA, x = "SC8", y = "SC9", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Enjoyment")
+
+cor.test(CA$SC3, CA$SC8, method=c("kendall"))
+ggscatter(CA, x = "SC8", y = "SC3", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Translation")
+
+#Dutch only
+cor.test(AllNL$SC10, AllNL$SC8, method=c("kendall"))
+ggscatter(AllNL, x = "SC8", y = "SC10", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Narrative Engagement")
+
+cor.test(AllNL$SC9, AllNL$SC8, method=c("kendall"))
+ggscatter(AllNL, x = "SC8", y = "SC9", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Enjoyment")
+
+cor.test(AllNL$SC3, AllNL$SC8, method=c("kendall"))
+ggscatter(AllNL, x = "SC8", y = "SC3", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "Reading patterns", ylab = "Translation")
+
+ggqqplot(df$SC9, ylab = "enjoyment")
+ggqqplot(df$SC3, ylab = "translation")#SC8 reading patterns, SC9 enjoyment, SC3 translation reception, SC10 narrativement engagement
+shapiro.test(df$SC9)
+shapiro.test(df$SC3)
+cor.test(df$SC3, df$SC9, method=c("kendall"))
+ggscatter(df, x = "SC3", y = "SC9", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "translation", ylab = "Enjoyment")
+
+ggqqplot(df$SC10, ylab = "narrative engagement")
+ggqqplot(df$SC3, ylab = "translation")
+shapiro.test(df$SC10)
+shapiro.test(df$SC3)
+cor.test(df$SC3, df$SC10, method=c("kendall"))
+ggscatter(df, x = "SC10", y = "SC3", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "kendall",
+          xlab = "translation", ylab = "narrative engagement")
+```
+
